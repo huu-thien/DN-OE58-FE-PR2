@@ -1,16 +1,9 @@
 import { Link } from 'react-router-dom';
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import TextField from '@mui/material/TextField';
 import SearchIcon from '@mui/icons-material/Search';
 import IconButton from '@mui/material/IconButton';
-import Avatar from '@mui/material/Avatar';
-import Badge from '@mui/material/Badge';
-import Divider from '@mui/material/Divider';
-
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import { Divider, Avatar, TextField, MenuItem, Menu, Button } from '@mui/material';
 import { useState } from 'react';
+import CartDrawer from '../CartDrawer/CartDrawer';
 
 const Header = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -35,31 +28,11 @@ const Header = () => {
               </Link>
             </Button>
             <div>
-              <Button
-
-              // id='product-button'
-              // aria-controls={open ? 'product-menu' : undefined}
-              // aria-haspopup='true'
-              // aria-expanded={open ? 'true' : undefined}
-              // onClick={handleClick}
-              >
+              <Button>
                 <Link to='/products' className='font-bold text-md'>
                   Sản phẩm
                 </Link>
               </Button>
-              {/* <Menu
-                id='product-menu'
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
-                MenuListProps={{
-                  'aria-labelledby': 'product-button'
-                }}
-              >
-                <MenuItem onClick={handleClose}>Hàng Mới</MenuItem>
-                <MenuItem onClick={handleClose}>Sản phẩm nam</MenuItem>
-                <MenuItem onClick={handleClose}>Sản phẩm nữ</MenuItem>
-              </Menu> */}
             </div>
             <Button>
               <Link to='/cart' className='font-bold text-md'>
@@ -114,15 +87,7 @@ const Header = () => {
                 </MenuItem>
               </Menu>
             </div>
-            <div className='flex items-center flex-col'>
-              <Link to='/cart'>
-                <Badge badgeContent={1} color='primary'>
-                  <IconButton>
-                    <AddShoppingCartIcon color='primary' />
-                  </IconButton>
-                </Badge>
-              </Link>
-            </div>
+            <CartDrawer />
           </div>
         </div>
       </div>
