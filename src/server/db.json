@@ -1,14 +1,25 @@
 {
   "users": [
     {
+      "id": 1,
       "fullName": "Nguyễn Hữu Dũng",
+      "username": "dung",
       "email": "dung1@gmail.com",
       "password": "D_123456"
     },
     {
+      "id": 2,
       "fullName": "Nguyễn Hữu Thiện",
+      "username": "thien",
       "email": "thien1@gmail.com",
       "password": "T_123456"
+    },
+    {
+      "fullName": "Nguyễn Hữu Thiện",
+      "username": "thiendeptrai",
+      "email": "nhthien.dut@gmail.com",
+      "password": "Thien@123",
+      "id": 3
     }
   ],
   "blogs": [],
@@ -22,7 +33,11 @@
       "typeProduct": "Áo",
       "productFor": "man",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -64,7 +79,11 @@
       "productFor": "man",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -105,7 +124,11 @@
       "productFor": "woman",
       "typeProduct": "Đồ bộ",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -147,7 +170,11 @@
       "productFor": "woman",
       "typeProduct": "Váy",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -186,7 +213,11 @@
       "productFor": "childrenGirl",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -226,7 +257,11 @@
       "productFor": "childrenGirl",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -265,7 +300,11 @@
       "productFor": "childrenBoy",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -305,7 +344,11 @@
       "productFor": "childrenBoy",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -345,7 +388,9 @@
       "productFor": "man",
       "typeProduct": "Quần",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["Nỉ"],
+      "material": [
+        "Nỉ"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -386,7 +431,11 @@
       "productFor": "man",
       "typeProduct": "Quần",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -425,7 +474,11 @@
       "productFor": "man",
       "typeProduct": "Đồ bộ",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -465,7 +518,10 @@
       "productFor": "man",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["60% cotton", "40% polyester"],
+      "material": [
+        "60% cotton",
+        "40% polyester"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -495,7 +551,6 @@
         "img1": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-1-thumb.webp",
         "img2": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-2.webp",
         "img3": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-xl-1.webp",
-        "img4": "https://canifa.com/img/1000/1500/resize/2/t/2th23a001-sw001-120-2.webp",
         "img4": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-sg179-1.webp"
       }
     },
@@ -508,7 +563,11 @@
       "typeProduct": "Áo",
       "productFor": "man",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -550,7 +609,11 @@
       "productFor": "man",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -591,7 +654,11 @@
       "productFor": "woman",
       "typeProduct": "Đồ bộ",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -633,7 +700,11 @@
       "productFor": "woman",
       "typeProduct": "Váy",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -672,7 +743,11 @@
       "productFor": "childrenGirl",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -712,7 +787,11 @@
       "productFor": "childrenGirl",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -751,7 +830,11 @@
       "productFor": "childrenBoy",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -791,7 +874,11 @@
       "productFor": "childrenBoy",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -831,7 +918,9 @@
       "productFor": "man",
       "typeProduct": "Quần",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["Nỉ"],
+      "material": [
+        "Nỉ"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -872,7 +961,11 @@
       "productFor": "man",
       "typeProduct": "Quần",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -911,7 +1004,11 @@
       "productFor": "man",
       "typeProduct": "Đồ bộ",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -951,7 +1048,10 @@
       "productFor": "man",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["60% cotton", "40% polyester"],
+      "material": [
+        "60% cotton",
+        "40% polyester"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -981,7 +1081,6 @@
         "img1": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-1-thumb.webp",
         "img2": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-2.webp",
         "img3": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-xl-1.webp",
-        "img4": "https://canifa.com/img/1000/1500/resize/2/t/2th23a001-sw001-120-2.webp",
         "img4": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-sg179-1.webp"
       }
     },
@@ -994,7 +1093,11 @@
       "typeProduct": "Áo",
       "productFor": "man",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -1036,7 +1139,11 @@
       "productFor": "man",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -1077,7 +1184,11 @@
       "productFor": "woman",
       "typeProduct": "Đồ bộ",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -1119,7 +1230,11 @@
       "productFor": "woman",
       "typeProduct": "Váy",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -1158,7 +1273,11 @@
       "productFor": "childrenGirl",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -1198,7 +1317,11 @@
       "productFor": "childrenGirl",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -1237,7 +1360,11 @@
       "productFor": "childrenBoy",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -1277,7 +1404,11 @@
       "productFor": "childrenBoy",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -1317,7 +1448,9 @@
       "productFor": "man",
       "typeProduct": "Quần",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["Nỉ"],
+      "material": [
+        "Nỉ"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -1358,7 +1491,11 @@
       "productFor": "man",
       "typeProduct": "Quần",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -1397,7 +1534,11 @@
       "productFor": "man",
       "typeProduct": "Đồ bộ",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -1437,7 +1578,10 @@
       "productFor": "man",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["60% cotton", "40% polyester"],
+      "material": [
+        "60% cotton",
+        "40% polyester"
+      ],
       "userManual": [
         "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
         "Giặt mặt trái sản phẩm.",
@@ -1467,7 +1611,6 @@
         "img1": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-1-thumb.webp",
         "img2": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-2.webp",
         "img3": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-xl-1.webp",
-        "img4": "https://canifa.com/img/1000/1500/resize/2/t/2th23a001-sw001-120-2.webp",
         "img4": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-sg179-1.webp"
       }
     }
