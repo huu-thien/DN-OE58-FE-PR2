@@ -44,7 +44,8 @@ const RegisterPage = () => {
           fullName: values.fullName,
           username: values.username,
           email: values.email,
-          password: values.password
+          password: values.password,
+          role: 'user'
         };
         const responseRegister = await postRegisterUser(dataRegister);
         if (responseRegister && responseRegister.status === 201) {

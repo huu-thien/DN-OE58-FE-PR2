@@ -112,6 +112,13 @@ const Header = () => {
                       Trung tâm trợ giúp
                     </Link>
                   </MenuItem>
+                  {user.role === 'admin' && (
+                    <MenuItem onClick={handleClose}>
+                      <Link to='/admin' className='r-4'>
+                        Chức năng Admin
+                      </Link>
+                    </MenuItem>
+                  )}
                   <MenuItem onClick={handleClose}>
                     <p className='r-4 text-red-500' onClick={handleLogout}>
                       Đăng xuất

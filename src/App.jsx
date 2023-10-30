@@ -16,15 +16,31 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { saveLogin } from './redux/reducer/authSlice';
 import ProfilePage from './pages/ProfilePage';
+
 import { useEffect } from 'react';
 import { fetchProducts } from './redux/reducer/productSlice';
+
+import AdminLayout from './layouts/AdminLayout';
+import AdminDashboard from './pages/AdminDashboard';
+import AdminManageProduct from './pages/AdminManageProduct';
+import AdminManageAccount from './pages/AdminManageAccount';
+import AdminManageRevenue from './pages/AdminManageRevenue';
+import AdminEditAccount from './pages/AdminEditAccount';
+import AdminEditProduct from './pages/AdminEditProduct';
+import AdminAddProduct from './pages/AdminAddProduct';
+import AdminChartCategory from './pages/AdminChartCategory';
+import AdminChartTypeProduct from './pages/AdminChartTypeProduct';
+
+
 
 function App() {
   const dispatch = useDispatch();
   const userLocal = localStorage.getItem('user');
+
   const { params } = useSelector((state) => state.product);
 
   let user = null;
+
   if (userLocal !== null) {
     user = JSON.parse(userLocal);
     dispatch(saveLogin(user));
@@ -50,6 +66,17 @@ function App() {
           <Route path={ROUTES.USER_PURCHASE_HISTORY_PAGE} element={<PurchaseHistoryPage />} />
           <Route path={ROUTES.BLOG_PAGE} element={<BlogPage />} />
           <Route path={ROUTES.USER_PROFILE_PAGE} element={<ProfilePage />} />
+        </Route>
+        <Route element={<AdminLayout />}>
+          <Route path={ROUTES.ADMIN_DASHBOARD_PAGE} element={<AdminDashboard />} />
+          <Route path={ROUTES.ADMIN_MANAGE_PRODUCT_PAGE} element={<AdminManageProduct />} />
+          <Route path={ROUTES.ADMIN_MANAGE_ACCOUNT_PAGE} element={<AdminManageAccount />} />
+          <Route path={ROUTES.ADMIN_MANAGE_REVENUE_PAGE} element={<AdminManageRevenue />} />
+          <Route path={ROUTES.ADMIN_MANAGE_ACCOUNT_EDIT_PAGE} element={<AdminEditAccount />} />
+          <Route path={ROUTES.ADMIN_MANAGE_PRODUCT_EDIT_PAGE} element={<AdminEditProduct />} />
+          <Route path={ROUTES.ADMIN_MANAGE_PRODUCT_ADD_PAGE} element={<AdminAddProduct />} />
+          <Route path={ROUTES.ADMIN_CHART_CATEGORY} element={<AdminChartCategory />} />
+          <Route path={ROUTES.ADMIN_BAR_CATEGORY} element={<AdminChartTypeProduct />} />
         </Route>
       </Routes>
       <ToastContainer

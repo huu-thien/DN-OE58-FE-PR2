@@ -4,22 +4,42 @@
       "id": 1,
       "fullName": "Nguyễn Hữu Dũng",
       "username": "dung",
-      "email": "dung1@gmail.com",
-      "password": "D_123456"
+      "email": "Dung1@gmail.com",
+      "password": "D_123456",
+      "role": "admin",
+      "phone": "0346282603",
+      "address": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
+      "imageUrl": ""
     },
     {
       "id": 2,
-      "fullName": "Nguyễn Hữu Thiện",
-      "username": "thien",
+      "fullName": "Nguyễn Hữu Thiện huhu",
+      "username": "thien123",
       "email": "thien1@gmail.com",
-      "password": "T_123456"
+      "password": "T_123456",
+      "role": "user",
+      "address": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
+      "phone": "0346282603",
+      "imageUrl": ""
     },
     {
       "fullName": "Nguyễn Hữu Thiện",
       "username": "thiendeptrai",
       "email": "nhthien.dut@gmail.com",
       "password": "Thien@123",
-      "id": 3
+      "id": 3,
+      "role": "user"
+    },
+    {
+      "fullName": "Chuyên Tâm",
+      "username": "chuyentam",
+      "email": "chuyentamgvn@gmail.com",
+      "password": "Chuyen@123",
+      "role": "admin",
+      "id": 4,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0fD8K3vn_KC4vBp8VBb1tWYomAQEDsF_MFw&usqp=CAU",
+      "address": "",
+      "phone": ""
     }
   ],
   "blogs": [],
@@ -28,7 +48,7 @@
       "id": 1,
       "nameProduct": "Áo phông nam người lớn cotton dáng rộng",
       "codeProduct": "5TS23W002",
-      "originalPrice": 399000,
+      "originalPrice": 400000,
       "percentSale": 0.15,
       "typeProduct": "Áo",
       "productFor": "man",
@@ -715,6 +735,28 @@
         "https://canifa.com/img/1000/1500/resize/8/s/8st22w005-sy029-xl-2.webp",
         "https://canifa.com/img/1000/1500/resize/8/s/8st22w005-sy029-1-thumb.webp"
       ]
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "createdAt": "2015-12-12",
+      "isFreeShip": true,
+      "totalPayments": 3000000,
+      "nameCustomer": "Thien",
+      "cardNumber": "1234-1234-1234",
+      "status": "success",
+      "listProducts": [{}]
+    },
+    {
+      "id": 2,
+      "createdAt": "2015-12-12",
+      "isFreeShip": true,
+      "totalPayments": 3000000,
+      "nameCustomer": "Dung",
+      "cardNumber": "5678-5678-5678",
+      "status": "pending",
+      "listProducts": [{}]
     }
   ]
 }

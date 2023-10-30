@@ -39,7 +39,7 @@ const ProfilePage = () => {
           })
           .then(() => {
             setIsEdit(false);
-            dispatch(setInfoUserUpdate({ ...values, id: Number(userLogin.id) }));
+            dispatch(setInfoUserUpdate({ ...values, id: Number(userLogin.id), role: userLogin.role }));
             localStorage.setItem('user', JSON.stringify({ ...values, id: Number(userLogin.id) }));
           });
       }

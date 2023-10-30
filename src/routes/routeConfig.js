@@ -10,5 +10,15 @@ export const ROUTES = {
   CHECK_OUT_PAGE: '/checkout',
   CHECK_OUT_SUCCESS_PAGE: '/checkout-success',
   ORDER_PAGE: '/order',
-  BLOG_PAGE: '/blog'
+  BLOG_PAGE: '/blog',
+  ADMIN_DASHBOARD_PAGE: '/admin',
+  ADMIN_MANAGE_PRODUCT_PAGE: '/admin-manage-products',
+  ADMIN_MANAGE_ACCOUNT_PAGE: '/admin-manage-accounts',
+  ADMIN_MANAGE_REVENUE_PAGE: '/admin-manage-revenues',
+  ADMIN_MANAGE_ACCOUNT_EDIT_PAGE: '/admin-manage-accounts/edit/:id',
+  ADMIN_MANAGE_PRODUCT_EDIT_PAGE: '/admin-manage-products/edit/:id',
+  ADMIN_MANAGE_PRODUCT_ADD_PAGE: '/admin-manage-products/add',
+  ADMIN_CHART_CATEGORY: '/admin-chart-category',
+  ADMIN_BAR_CATEGORY: '/admin-chart-type',
+
 };
