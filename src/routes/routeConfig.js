@@ -4,7 +4,7 @@ export const ROUTES = {
   REGISTER_PAGE: '/register',
   PRODUCT_PAGE: '/products',
   PRODUCT_DETAIL_PAGE: '/products/:id',
-  USER_PROFILE_PAGE: '/user/profile',
+  USER_PROFILE_PAGE: '/profile',
   CART_PAGE: '/cart',
   USER_PURCHASE_HISTORY_PAGE: '/purchase-history',
   CHECK_OUT_PAGE: '/checkout',

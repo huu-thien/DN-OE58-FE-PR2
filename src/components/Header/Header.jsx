@@ -77,7 +77,10 @@ const Header = () => {
                 onClick={handleClick}
               >
                 <IconButton>
-                  <Avatar sx={user ? { width: 25, height: 25, bgcolor: '#1976d2' } : { width: 25, height: 25 }}>
+                  <Avatar
+                    sx={user ? { width: 25, height: 25, bgcolor: '#1976d2' } : { width: 25, height: 25 }}
+                    src={user?.imageUrl ? user?.imageUrl : ''}
+                  >
                     {user && user.fullName[0].toUpperCase()}
                   </Avatar>
                 </IconButton>
@@ -94,7 +97,7 @@ const Header = () => {
                   }}
                 >
                   <MenuItem onClick={handleClose}>
-                    <Link to='/' className='r-4'>
+                    <Link to={`/profile`} className='r-4'>
                       Thông tin tài khoản
                     </Link>
                   </MenuItem>
