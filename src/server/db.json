@@ -1,0 +1,1475 @@
+{
+  "users": [
+    {
+      "fullName": "Nguyễn Hữu Dũng",
+      "email": "dung1@gmail.com",
+      "password": "D_123456"
+    },
+    {
+      "fullName": "Nguyễn Hữu Thiện",
+      "email": "thien1@gmail.com",
+      "password": "T_123456"
+    }
+  ],
+  "blogs": [],
+  "products": [
+    {
+      "id": 1,
+      "nameProduct": "Áo phông unisex người lớn cotton dáng rộng",
+      "codeProduct": "5TS23W002",
+      "originalPrice": 399000,
+      "percentSale": 0.15,
+      "typeProduct": "Áo",
+      "productFor": "man",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "pink": "pink",
+        "green": "green",
+        "black": "black"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l",
+        "xl": "xl"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/5/t/5ts23w002-sw142-1.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/5/t/5ts23w002-sb422-xl-1-u.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/5/t/5ts23w002-sw142-xl-1-u.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/5/t/5ts23w002-sg586-xl-1-u-x.webp"
+      }
+    },
+    {
+      "id": 2,
+      "nameProduct": "Áo sơ mi Oxford nam cotton dài tay",
+      "codeProduct": "8TH23W008",
+      "originalPrice": 499000,
+      "percentSale": 0,
+      "productFor": "man",
+      "typeProduct": "Áo",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "blue": "blue",
+        "white": "white"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l",
+        "xl": "xl"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/8/t/8th23w008-sl165-xl-1-u.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/8/t/8th23w008-sl165-xl-6.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/8/t/8th23w008-sw001-xl-1-u.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/8/t/8th23w008-sw001-xl-4.webp"
+      }
+    },
+    {
+      "id": 3,
+      "nameProduct": "Bộ quần áo nữ có hình in",
+      "codeProduct": "6ST23W002",
+      "originalPrice": 549000,
+      "percentSale": 0.05,
+      "productFor": "woman",
+      "typeProduct": "Đồ bộ",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "orange": "orange",
+        "black": "black",
+        "pink": "pink"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l",
+        "xl": "xl"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/6/s/6st23w002-se239-m-1-ghep-u.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/6/s/6st23w002-sk010-m-1-ghep-u.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/6/s/6st23w002-sm095-m-1-ghep-u.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/6/s/6st23w002-sm095-m-1.webp"
+      }
+    },
+    {
+      "id": 4,
+      "nameProduct": "Váy liền nữ ngắn tay dáng A dài",
+      "codeProduct": "6DS23W006",
+      "originalPrice": 949000,
+      "percentSale": 0,
+      "productFor": "woman",
+      "typeProduct": "Váy",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "black": "black"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/6/d/6ds23w006-sk010-m-1-u.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/6/d/6ds23w006-sk010-m-2.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/6/d/6ds23w006-sk010-m-4.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/6/d/6ds23w006-sk010-m-5.webp"
+      }
+    },
+    {
+      "id": 5,
+      "nameProduct": "Áo gilet len bé gái cổ tim",
+      "codeProduct": "1TE23W005",
+      "originalPrice": 349000,
+      "percentSale": 0,
+      "productFor": "childrenGirl",
+      "typeProduct": "Áo",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "pink": "pink",
+        "lightBlue": "lightBlue"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fb488-130-1-u.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fb488-130-2.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fp040-130-1-u.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fp040-130-2.webp"
+      }
+    },
+    {
+      "id": 6,
+      "nameProduct": "Áo len bé gái cổ tròn dài tay có hình in Minne",
+      "codeProduct": "1TE20W018",
+      "originalPrice": 349000,
+      "percentSale": 0.15,
+      "productFor": "childrenGirl",
+      "typeProduct": "Áo",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "yellow": "yellow"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fb488-130-1-u.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/1/t/1te20w018-sy079-110-2.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fb488-130-1-u.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/1/t/1te20w018-sy079-110-2.webp"
+      }
+    },
+    {
+      "id": 7,
+      "nameProduct": "Áo polo dài tay bé trai cotton USA có hình in",
+      "codeProduct": "2TP23W007",
+      "originalPrice": 249000,
+      "percentSale": 0.15,
+      "productFor": "childrenBoy",
+      "typeProduct": "Áo",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "grey": "grey",
+        "white": "white"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/2/t/2tp23w007-sw001-1.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/2/t/2tp23w007-sw001-3.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/2/t/2tp23w007-sa026-1.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/2/t/2tp23w007-sa026-1.webp"
+      }
+    },
+    {
+      "id": 8,
+      "nameProduct": "Áo sơ mi bé trai cotton cổ đức cộc tay túi ốp ngực",
+      "codeProduct": "2TH23A001",
+      "originalPrice": 249000,
+      "percentSale": 0,
+      "productFor": "childrenBoy",
+      "typeProduct": "Áo",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "purpleCharcoal": "purpleCharcoal",
+        "white": "white"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/2/t/2th23a001-sb195-1.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/2/t/2th23a001-sb195-120-1.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/2/t/2th23a001-sw001-120-1.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/2/t/2th23a001-sw001-120-2.webp"
+      }
+    },
+    {
+      "id": 9,
+      "nameProduct": "Quần nỉ nam dáng jogger bo gấu",
+      "codeProduct": "8BP23W006",
+      "originalPrice": 289000,
+      "percentSale": 0,
+      "productFor": "man",
+      "typeProduct": "Quần",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["Nỉ"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "grey": "grey",
+        "black": "black"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l",
+        "xl": "xl"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/8/b/8bp23w006-sb422-xl-1-u.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/8/b/8bp23w006-sb422-xl-2.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/8/b/8bp23w006-sa014-xl-2.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/8/b/8bp23w006-sb060-1.webp"
+      }
+    },
+    {
+      "id": 10,
+      "nameProduct": "Quần jeans nam dáng ôm",
+      "codeProduct": "8BJ23A001",
+      "originalPrice": 750000,
+      "percentSale": 0.15,
+      "productFor": "man",
+      "typeProduct": "Quần",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "blue": "blue"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/8/b/8bj23a001-sj771-1.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/8/b/8bj23a001-sj771-1.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/8/b/8bj23a001-sj771-1.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/8/b/8bj23a001-sj770-31-1.webp"
+      }
+    },
+    {
+      "id": 11,
+      "nameProduct": "Bộ quần áo nỉ nam áo dài tay có hình in quần dài dáng suông",
+      "codeProduct": "8ST22W005",
+      "originalPrice": 800000,
+      "percentSale": 0.25,
+      "productFor": "man",
+      "typeProduct": "Đồ bộ",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "yellow": "yellow"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l",
+        "xl": "xl"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/8/s/8st22w005-sy029-2.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/8/s/8st22w005-sy029-xl-1.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/8/s/8st22w005-sy029-xl-2.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/8/s/8st22w005-sy029-1-thumb.webp"
+      }
+    },
+    {
+      "id": 12,
+      "nameProduct": "Áo phông nam cổ tròn dáng suông",
+      "codeProduct": "8TS23A004",
+      "originalPrice": 169000,
+      "percentSale": 0,
+      "productFor": "man",
+      "typeProduct": "Áo",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["60% cotton", "40% polyester"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "yellow": "yellow",
+        "white": "white",
+        "blue": "blue"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l",
+        "xl": "xl"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-1-thumb.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-2.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-xl-1.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/2/t/2th23a001-sw001-120-2.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-sg179-1.webp"
+      }
+    },
+    {
+      "id": 13,
+      "nameProduct": "Áo phông unisex người lớn cotton dáng rộng",
+      "codeProduct": "5TS23W002",
+      "originalPrice": 399000,
+      "percentSale": 0.15,
+      "typeProduct": "Áo",
+      "productFor": "man",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "pink": "pink",
+        "green": "green",
+        "black": "black"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l",
+        "xl": "xl"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/5/t/5ts23w002-sw142-1.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/5/t/5ts23w002-sb422-xl-1-u.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/5/t/5ts23w002-sw142-xl-1-u.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/5/t/5ts23w002-sg586-xl-1-u-x.webp"
+      }
+    },
+    {
+      "id": 14,
+      "nameProduct": "Áo sơ mi Oxford nam cotton dài tay",
+      "codeProduct": "8TH23W008",
+      "originalPrice": 499000,
+      "percentSale": 0,
+      "productFor": "man",
+      "typeProduct": "Áo",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "blue": "blue",
+        "white": "white"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l",
+        "xl": "xl"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/8/t/8th23w008-sl165-xl-1-u.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/8/t/8th23w008-sl165-xl-6.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/8/t/8th23w008-sw001-xl-1-u.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/8/t/8th23w008-sw001-xl-4.webp"
+      }
+    },
+    {
+      "id": 15,
+      "nameProduct": "Bộ quần áo nữ có hình in",
+      "codeProduct": "6ST23W002",
+      "originalPrice": 549000,
+      "percentSale": 0.05,
+      "productFor": "woman",
+      "typeProduct": "Đồ bộ",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "orange": "orange",
+        "black": "black",
+        "pink": "pink"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l",
+        "xl": "xl"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/6/s/6st23w002-se239-m-1-ghep-u.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/6/s/6st23w002-sk010-m-1-ghep-u.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/6/s/6st23w002-sm095-m-1-ghep-u.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/6/s/6st23w002-sm095-m-1.webp"
+      }
+    },
+    {
+      "id": 16,
+      "nameProduct": "Váy liền nữ ngắn tay dáng A dài",
+      "codeProduct": "6DS23W006",
+      "originalPrice": 949000,
+      "percentSale": 0,
+      "productFor": "woman",
+      "typeProduct": "Váy",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "black": "black"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/6/d/6ds23w006-sk010-m-1-u.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/6/d/6ds23w006-sk010-m-2.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/6/d/6ds23w006-sk010-m-4.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/6/d/6ds23w006-sk010-m-5.webp"
+      }
+    },
+    {
+      "id": 17,
+      "nameProduct": "Áo gilet len bé gái cổ tim",
+      "codeProduct": "1TE23W005",
+      "originalPrice": 349000,
+      "percentSale": 0,
+      "productFor": "childrenGirl",
+      "typeProduct": "Áo",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "pink": "pink",
+        "lightBlue": "lightBlue"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fb488-130-1-u.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fb488-130-2.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fp040-130-1-u.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fp040-130-2.webp"
+      }
+    },
+    {
+      "id": 18,
+      "nameProduct": "Áo len bé gái cổ tròn dài tay có hình in Minne",
+      "codeProduct": "1TE20W018",
+      "originalPrice": 349000,
+      "percentSale": 0.15,
+      "productFor": "childrenGirl",
+      "typeProduct": "Áo",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "yellow": "yellow"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fb488-130-1-u.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/1/t/1te20w018-sy079-110-2.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fb488-130-1-u.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/1/t/1te20w018-sy079-110-2.webp"
+      }
+    },
+    {
+      "id": 19,
+      "nameProduct": "Áo polo dài tay bé trai cotton USA có hình in",
+      "codeProduct": "2TP23W007",
+      "originalPrice": 249000,
+      "percentSale": 0.15,
+      "productFor": "childrenBoy",
+      "typeProduct": "Áo",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "grey": "grey",
+        "white": "white"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/2/t/2tp23w007-sw001-1.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/2/t/2tp23w007-sw001-3.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/2/t/2tp23w007-sa026-1.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/2/t/2tp23w007-sa026-1.webp"
+      }
+    },
+    {
+      "id": 20,
+      "nameProduct": "Áo sơ mi bé trai cotton cổ đức cộc tay túi ốp ngực",
+      "codeProduct": "2TH23A001",
+      "originalPrice": 249000,
+      "percentSale": 0,
+      "productFor": "childrenBoy",
+      "typeProduct": "Áo",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "purpleCharcoal": "purpleCharcoal",
+        "white": "white"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/2/t/2th23a001-sb195-1.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/2/t/2th23a001-sb195-120-1.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/2/t/2th23a001-sw001-120-1.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/2/t/2th23a001-sw001-120-2.webp"
+      }
+    },
+    {
+      "id": 21,
+      "nameProduct": "Quần nỉ nam dáng jogger bo gấu",
+      "codeProduct": "8BP23W006",
+      "originalPrice": 289000,
+      "percentSale": 0,
+      "productFor": "man",
+      "typeProduct": "Quần",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["Nỉ"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "grey": "grey",
+        "black": "black"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l",
+        "xl": "xl"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/8/b/8bp23w006-sb422-xl-1-u.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/8/b/8bp23w006-sb422-xl-2.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/8/b/8bp23w006-sa014-xl-2.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/8/b/8bp23w006-sb060-1.webp"
+      }
+    },
+    {
+      "id": 22,
+      "nameProduct": "Quần jeans nam dáng ôm",
+      "codeProduct": "8BJ23A001",
+      "originalPrice": 750000,
+      "percentSale": 0.15,
+      "productFor": "man",
+      "typeProduct": "Quần",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "blue": "blue"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/8/b/8bj23a001-sj771-1.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/8/b/8bj23a001-sj771-1.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/8/b/8bj23a001-sj771-1.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/8/b/8bj23a001-sj770-31-1.webp"
+      }
+    },
+    {
+      "id": 23,
+      "nameProduct": "Bộ quần áo nỉ nam áo dài tay có hình in quần dài dáng suông",
+      "codeProduct": "8ST22W005",
+      "originalPrice": 800000,
+      "percentSale": 0.25,
+      "productFor": "man",
+      "typeProduct": "Đồ bộ",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "yellow": "yellow"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l",
+        "xl": "xl"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/8/s/8st22w005-sy029-2.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/8/s/8st22w005-sy029-xl-1.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/8/s/8st22w005-sy029-xl-2.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/8/s/8st22w005-sy029-1-thumb.webp"
+      }
+    },
+    {
+      "id": 24,
+      "nameProduct": "Áo phông nam cổ tròn dáng suông",
+      "codeProduct": "8TS23A004",
+      "originalPrice": 169000,
+      "percentSale": 0,
+      "productFor": "man",
+      "typeProduct": "Áo",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["60% cotton", "40% polyester"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "yellow": "yellow",
+        "white": "white",
+        "blue": "blue"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l",
+        "xl": "xl"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-1-thumb.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-2.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-xl-1.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/2/t/2th23a001-sw001-120-2.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-sg179-1.webp"
+      }
+    },
+    {
+      "id": 25,
+      "nameProduct": "Áo phông unisex người lớn cotton dáng rộng",
+      "codeProduct": "5TS23W002",
+      "originalPrice": 399000,
+      "percentSale": 0.15,
+      "typeProduct": "Áo",
+      "productFor": "man",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "pink": "pink",
+        "green": "green",
+        "black": "black"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l",
+        "xl": "xl"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/5/t/5ts23w002-sw142-1.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/5/t/5ts23w002-sb422-xl-1-u.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/5/t/5ts23w002-sw142-xl-1-u.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/5/t/5ts23w002-sg586-xl-1-u-x.webp"
+      }
+    },
+    {
+      "id": 26,
+      "nameProduct": "Áo sơ mi Oxford nam cotton dài tay",
+      "codeProduct": "8TH23W008",
+      "originalPrice": 499000,
+      "percentSale": 0,
+      "productFor": "man",
+      "typeProduct": "Áo",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "blue": "blue",
+        "white": "white"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l",
+        "xl": "xl"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/8/t/8th23w008-sl165-xl-1-u.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/8/t/8th23w008-sl165-xl-6.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/8/t/8th23w008-sw001-xl-1-u.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/8/t/8th23w008-sw001-xl-4.webp"
+      }
+    },
+    {
+      "id": 27,
+      "nameProduct": "Bộ quần áo nữ có hình in",
+      "codeProduct": "6ST23W002",
+      "originalPrice": 549000,
+      "percentSale": 0.05,
+      "productFor": "woman",
+      "typeProduct": "Đồ bộ",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "orange": "orange",
+        "black": "black",
+        "pink": "pink"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l",
+        "xl": "xl"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/6/s/6st23w002-se239-m-1-ghep-u.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/6/s/6st23w002-sk010-m-1-ghep-u.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/6/s/6st23w002-sm095-m-1-ghep-u.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/6/s/6st23w002-sm095-m-1.webp"
+      }
+    },
+    {
+      "id": 28,
+      "nameProduct": "Váy liền nữ ngắn tay dáng A dài",
+      "codeProduct": "6DS23W006",
+      "originalPrice": 949000,
+      "percentSale": 0,
+      "productFor": "woman",
+      "typeProduct": "Váy",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "black": "black"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/6/d/6ds23w006-sk010-m-1-u.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/6/d/6ds23w006-sk010-m-2.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/6/d/6ds23w006-sk010-m-4.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/6/d/6ds23w006-sk010-m-5.webp"
+      }
+    },
+    {
+      "id": 29,
+      "nameProduct": "Áo gilet len bé gái cổ tim",
+      "codeProduct": "1TE23W005",
+      "originalPrice": 349000,
+      "percentSale": 0,
+      "productFor": "childrenGirl",
+      "typeProduct": "Áo",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "pink": "pink",
+        "lightBlue": "lightBlue"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fb488-130-1-u.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fb488-130-2.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fp040-130-1-u.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fp040-130-2.webp"
+      }
+    },
+    {
+      "id": 30,
+      "nameProduct": "Áo len bé gái cổ tròn dài tay có hình in Minne",
+      "codeProduct": "1TE20W018",
+      "originalPrice": 349000,
+      "percentSale": 0.15,
+      "productFor": "childrenGirl",
+      "typeProduct": "Áo",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "yellow": "yellow"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fb488-130-1-u.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/1/t/1te20w018-sy079-110-2.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fb488-130-1-u.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/1/t/1te20w018-sy079-110-2.webp"
+      }
+    },
+    {
+      "id": 31,
+      "nameProduct": "Áo polo dài tay bé trai cotton USA có hình in",
+      "codeProduct": "2TP23W007",
+      "originalPrice": 249000,
+      "percentSale": 0.15,
+      "productFor": "childrenBoy",
+      "typeProduct": "Áo",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "grey": "grey",
+        "white": "white"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/2/t/2tp23w007-sw001-1.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/2/t/2tp23w007-sw001-3.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/2/t/2tp23w007-sa026-1.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/2/t/2tp23w007-sa026-1.webp"
+      }
+    },
+    {
+      "id": 32,
+      "nameProduct": "Áo sơ mi bé trai cotton cổ đức cộc tay túi ốp ngực",
+      "codeProduct": "2TH23A001",
+      "originalPrice": 249000,
+      "percentSale": 0,
+      "productFor": "childrenBoy",
+      "typeProduct": "Áo",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "purpleCharcoal": "purpleCharcoal",
+        "white": "white"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/2/t/2th23a001-sb195-1.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/2/t/2th23a001-sb195-120-1.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/2/t/2th23a001-sw001-120-1.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/2/t/2th23a001-sw001-120-2.webp"
+      }
+    },
+    {
+      "id": 33,
+      "nameProduct": "Quần nỉ nam dáng jogger bo gấu",
+      "codeProduct": "8BP23W006",
+      "originalPrice": 289000,
+      "percentSale": 0,
+      "productFor": "man",
+      "typeProduct": "Quần",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["Nỉ"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "grey": "grey",
+        "black": "black"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l",
+        "xl": "xl"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/8/b/8bp23w006-sb422-xl-1-u.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/8/b/8bp23w006-sb422-xl-2.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/8/b/8bp23w006-sa014-xl-2.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/8/b/8bp23w006-sb060-1.webp"
+      }
+    },
+    {
+      "id": 34,
+      "nameProduct": "Quần jeans nam dáng ôm",
+      "codeProduct": "8BJ23A001",
+      "originalPrice": 750000,
+      "percentSale": 0.15,
+      "productFor": "man",
+      "typeProduct": "Quần",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "blue": "blue"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/8/b/8bj23a001-sj771-1.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/8/b/8bj23a001-sj771-1.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/8/b/8bj23a001-sj771-1.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/8/b/8bj23a001-sj770-31-1.webp"
+      }
+    },
+    {
+      "id": 35,
+      "nameProduct": "Bộ quần áo nỉ nam áo dài tay có hình in quần dài dáng suông",
+      "codeProduct": "8ST22W005",
+      "originalPrice": 800000,
+      "percentSale": 0.25,
+      "productFor": "man",
+      "typeProduct": "Đồ bộ",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "yellow": "yellow"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l",
+        "xl": "xl"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/8/s/8st22w005-sy029-2.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/8/s/8st22w005-sy029-xl-1.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/8/s/8st22w005-sy029-xl-2.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/8/s/8st22w005-sy029-1-thumb.webp"
+      }
+    },
+    {
+      "id": 36,
+      "nameProduct": "Áo phông nam cổ tròn dáng suông",
+      "codeProduct": "8TS23A004",
+      "originalPrice": 169000,
+      "percentSale": 0,
+      "productFor": "man",
+      "typeProduct": "Áo",
+      "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
+      "material": ["60% cotton", "40% polyester"],
+      "userManual": [
+        "Giặt máy ở chế độ nhẹ, nhiệt độ thường.",
+        "Giặt mặt trái sản phẩm.",
+        "Giặt với sản phẩm cùng màu.",
+        "Không sử dụng hóa chất tẩy có chứa Clo.",
+        "Phơi vắt ngang, trong bóng mát.",
+        "Không sử dụng máy sấy.",
+        "Là ở nhiệt độ thấp 110 độ C.",
+        "Làm ẩm sản phẩm khi là."
+      ],
+      "rate": {
+        "starAverage": 4,
+        "count": 15
+      },
+      "colors": {
+        "yellow": "yellow",
+        "white": "white",
+        "blue": "blue"
+      },
+      "sizes": {
+        "s": "s",
+        "m": "m",
+        "l": "l",
+        "xl": "xl"
+      },
+      "images": {
+        "img1": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-1-thumb.webp",
+        "img2": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-2.webp",
+        "img3": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-xl-1.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/2/t/2th23a001-sw001-120-2.webp",
+        "img4": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-sg179-1.webp"
+      }
+    }
+  ]
+}
