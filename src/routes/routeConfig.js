@@ -8,5 +8,6 @@ export const ROUTES = {
   CART_PAGE: "/cart",
   USER_PURCHASE_HISTORY_PAGE: "/purchase-history",
   CHECK_OUT_PAGE: "/checkout",
+  CHECK_OUT_SUCCESS_PAGE: "/checkout-success",
   ORDER_PAGE: "/order",
 };
