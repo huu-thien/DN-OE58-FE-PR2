@@ -8,10 +8,10 @@ import LoginPage from './pages/LoginPage';
 import ProductPage from './pages/ProductPage';
 import ProductDetailPage from './pages/ProductDetailPage';
 import CheckoutPage from './pages/CheckoutPage';
+import BlogPage from './pages/BlogPage';
 
 import CheckoutSuccessPage from './pages/CheckoutSuccessPage';
 import PurchaseHistoryPage from './pages/PurchaseHistoryPage';
-
 
 function App() {
   return (
@@ -26,6 +26,7 @@ function App() {
         <Route path={ROUTES.CHECK_OUT_PAGE} element={<CheckoutPage />} />
         <Route path={ROUTES.CHECK_OUT_SUCCESS_PAGE} element={<CheckoutSuccessPage />} />
         <Route path={ROUTES.USER_PURCHASE_HISTORY_PAGE} element={<PurchaseHistoryPage />} />
+        <Route path={ROUTES.BLOG_PAGE} element={<BlogPage />} />
       </Route>
     </Routes>
   );

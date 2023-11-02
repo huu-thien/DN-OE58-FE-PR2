@@ -35,7 +35,7 @@ const Header = () => {
               </Button>
             </div>
             <Button>
-              <Link to='/cart' className='font-bold text-md'>
+              <Link to='/blog' className='font-bold text-md'>
                 Blog
               </Link>
             </Button>
