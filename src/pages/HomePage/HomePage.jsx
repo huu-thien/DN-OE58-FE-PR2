@@ -3,6 +3,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import CardProduct from 'src/components/CardProduct/CardProduct';
 import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 
 const NextArrow = ({ className, style, onClick }) => {
   return (
@@ -35,6 +36,16 @@ PrevArrow.propTypes = {
 };
 
 const HomePage = () => {
+  const { products } = useSelector((state) => state.product);
+
+  const productsClone = [...products];
+  const productsSale = productsClone.filter((product) => product.percentSale !== 0);
+  const productsMan = productsClone.filter((product) => product.productFor === 'man').slice(0, 4);
+  const productsWoman = productsClone.filter((product) => product.productFor === 'woman').slice(0, 4);
+  const productsChild = productsClone
+    .filter((product) => product.productFor === 'childrenGirl' || product.productFor === 'childrenBoy')
+    .slice(0, 4);
+
   const settings = {
     dots: true,
     lazyLoad: true,
@@ -69,6 +80,46 @@ const HomePage = () => {
         }
       }
     ]
+  };
+
+  const renderProductsSale = (products) => {
+    return products.map((product) => {
+      return (
+        <div key={product.id}>
+          <CardProduct product={product} />
+        </div>
+      );
+    });
+  };
+
+  const renderProductsMan = (products) => {
+    return products.map((product) => {
+      return (
+        <div key={product.id}>
+          <CardProduct product={product} />
+        </div>
+      );
+    });
+  };
+
+  const renderProductsWoMan = (products) => {
+    return products.map((product) => {
+      return (
+        <div key={product.id}>
+          <CardProduct product={product} />
+        </div>
+      );
+    });
+  };
+
+  const renderProductsChildren = (products) => {
+    return products.map((product) => {
+      return (
+        <div key={product.id}>
+          <CardProduct product={product} />
+        </div>
+      );
+    });
   };
 
   return (
@@ -159,35 +210,7 @@ const HomePage = () => {
 
           <div className='product-sale__list'>
             <div className='container-slick relative'>
-              <Slider {...settingsProduct}>
-                <div>
-                  <CardProduct />
-                </div>
-                <div>
-                  <CardProduct />
-                </div>
-                <div>
-                  <CardProduct />
-                </div>
-                <div>
-                  <CardProduct />
-                </div>
-                <div>
-                  <CardProduct />
-                </div>
-                <div>
-                  <CardProduct />
-                </div>
-                <div>
-                  <CardProduct />
-                </div>
-                <div>
-                  <CardProduct />
-                </div>
-                <div>
-                  <CardProduct />
-                </div>
-              </Slider>
+              <Slider {...settingsProduct}>{renderProductsSale(productsSale)}</Slider>
             </div>
           </div>
         </div>
@@ -264,24 +287,11 @@ const HomePage = () => {
 
         {/* men product */}
         <div className='mt-8'>
-          <div className='mb-6 flex items-center justify-between'>
+          <div className='mb-6 flex justify-between'>
             <p className='uppercase font-[600] text-xl'>Nam</p>
             <p className='cursor-pointer me-2'>Xem thêm</p>
           </div>
-          <div className='flex justify-between items-center gap-[10px]'>
-            <div>
-              <CardProduct />
-            </div>
-            <div>
-              <CardProduct />
-            </div>
-            <div>
-              <CardProduct />
-            </div>
-            <div>
-              <CardProduct />
-            </div>
-          </div>
+          <div className='flex justify-between gap-[10px]'>{renderProductsMan(productsMan)}</div>
         </div>
         {/* end men product */}
 
@@ -291,20 +301,7 @@ const HomePage = () => {
             <p className='uppercase font-[600] text-xl'>Nữ</p>
             <p className='cursor-pointer me-2'>Xem thêm</p>
           </div>
-          <div className='flex justify-between items-center gap-[10px]'>
-            <div>
-              <CardProduct />
-            </div>
-            <div>
-              <CardProduct />
-            </div>
-            <div>
-              <CardProduct />
-            </div>
-            <div>
-              <CardProduct />
-            </div>
-          </div>
+          <div className='flex justify-between gap-[10px]'>{renderProductsWoMan(productsWoman)}</div>
         </div>
         {/* end women product */}
 
@@ -314,20 +311,7 @@ const HomePage = () => {
             <p className='uppercase font-[600] text-xl'>Trẻ em</p>
             <p className='cursor-pointer me-2'>Xem thêm</p>
           </div>
-          <div className='flex justify-between items-center gap-[10px]'>
-            <div>
-              <CardProduct />
-            </div>
-            <div>
-              <CardProduct />
-            </div>
-            <div>
-              <CardProduct />
-            </div>
-            <div>
-              <CardProduct />
-            </div>
-          </div>
+          <div className='flex justify-between gap-[10px]'>{renderProductsChildren(productsChild)}</div>
         </div>
         {/* end children product */}
 

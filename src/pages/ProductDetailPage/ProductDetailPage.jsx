@@ -6,10 +6,26 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import CardProduct from 'src/components/CardProduct/CardProduct';
+import { useParams } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchProductDetail } from 'src/redux/reducer/productSlice';
 
 const ProductDetailPage = () => {
+  const dispatch = useDispatch();
   const [color, setColor] = useState('');
   const [quantity, setQuantity] = useState(1);
+  const params = useParams();
+  const { productDetail, products } = useSelector((state) => state.product);
+
+  useEffect(() => {
+    dispatch(fetchProductDetail(params.id));
+  }, []);
+
+  const productsClone = [...products];
+  const productsRelated = productsClone.filter(
+    (product) => product.productFor === productDetail.productFor && product.typeProduct === productDetail.typeProduct
+  );
+  const productsRelatedRender = productsRelated.slice(0, 4);
 
   const [nav1, setNav1] = useState(null);
   const [nav2, setNav2] = useState(null);
@@ -38,51 +54,81 @@ const ProductDetailPage = () => {
     }
   };
 
+  const renderImages = (images) => {
+    return images?.map((img, index) => {
+      return (
+        <div key={index}>
+          <img src={img} alt='img' />
+        </div>
+      );
+    });
+  };
+
+  const renderColors = (colors) => {
+    return colors?.map((color, index) => {
+      return (
+        <MenuItem key={index} value={color}>
+          {color}
+        </MenuItem>
+      );
+    });
+  };
+
+  const renderSizes = (sizes) => {
+    return sizes?.map((size, index) => {
+      return (
+        <div
+          key={index}
+          className='border-solid border-2 border-[#efefef] max-w-[30px] w-full flex justify-center items-center cursor-pointer'
+        >
+          {size.toUpperCase()}
+        </div>
+      );
+    });
+  };
+
+  const renderProductsRelated = (productsRelated) => {
+    return productsRelated.map((product, index) => {
+      return (
+        <div key={index} className='max-w-[180px] md:max-w-[300px]'>
+          <CardProduct product={product} />
+        </div>
+      );
+    });
+  };
+
   return (
     <div>
       <div className='product-detail__container flex justify-between mt-16'>
         <div className='product-detail__img-grp w-[55%] '>
           {/* img main */}
           <Slider asNavFor={nav2} ref={slider1Ref}>
-            <div>
-              <img src='https://canifa.com/img/1000/1500/resize/8/t/8ts23w005-sn187-xl-1-u.webp' alt='img' />
-            </div>
-            <div>
-              <img src='https://canifa.com/img/1000/1500/resize/8/t/8ts23w005-sw001-xl-1-u.webp' alt='img' />
-            </div>
-            <div>
-              <img src='https://canifa.com/img/1000/1500/resize/8/t/8ts23w005-sk010-xl-1-u.webp' alt='img' />
-            </div>
-            <div>
-              <img src='https://canifa.com/img/1000/1500/resize/8/t/8ts23w005-sn187-xl-3.webp' alt='img' />
-            </div>
+            {renderImages(productDetail?.images)}
           </Slider>
           {/* thumbnails img */}
           <Slider asNavFor={nav1} ref={slider2Ref} slidesToShow={3} swipeToSlide={true} focusOnSelect={true}>
-            <div>
-              <img src='https://canifa.com/img/1000/1500/resize/8/t/8ts23w005-sn187-xl-1-u.webp' alt='img' />
-            </div>
-            <div>
-              <img src='https://canifa.com/img/1000/1500/resize/8/t/8ts23w005-sw001-xl-1-u.webp' alt='img' />
-            </div>
-            <div>
-              <img src='https://canifa.com/img/1000/1500/resize/8/t/8ts23w005-sk010-xl-1-u.webp' alt='img' />
-            </div>
-            <div>
-              <img src='https://canifa.com/img/1000/1500/resize/8/t/8ts23w005-sn187-xl-3.webp' alt='img' />
-            </div>
+            {renderImages(productDetail?.images)}
           </Slider>
         </div>
 
         <div className='product-detail__right-grp w-[40%] '>
           <div>
-            <p className='text-xl lg:text-2xl font-[600]'>Áo phông nam cotton dáng rộng có hình in</p>
+            <p className='text-xl lg:text-2xl font-[600]'>{productDetail?.nameProduct}</p>
           </div>
           <div>
-            <p className='my-4'>Mã sp: 8TS23W005</p>
+            <p className='my-4'>Mã sp: {productDetail?.codeProduct}</p>
           </div>
           <div>
-            <p className='font-bold text-lg'>299.000 ₫</p>
+            <p className='font-bold text-lg'>{productDetail?.originalPrice * (1 - productDetail.percentSale)} ₫</p>
+          </div>
+          <div>
+            <span className={`text-lg line-through me-[20px] ${productDetail.percentSale ? '' : 'hidden'}`}>
+              {productDetail?.originalPrice} ₫
+            </span>
+            <span className={`font-[500] text-red-500 text-md ${productDetail.percentSale ? '' : 'hidden'}`}>
+              {' '}
+              -{productDetail.percentSale * 100} %
+            </span>
           </div>
           {/* color */}
           <div className='product-detail__colors border-b-2 border-solid border-[#efefef] py-4'>
@@ -100,9 +146,7 @@ const ProductDetailPage = () => {
                     label='Color'
                     onChange={handleChangeColor}
                   >
-                    <MenuItem value={'Black'}>Black</MenuItem>
-                    <MenuItem value={'White'}>White</MenuItem>
-                    <MenuItem value={'Blue'}>Blue</MenuItem>
+                    {renderColors(productDetail.colors)}
                   </Select>
                 </FormControl>
               </Box>
@@ -115,20 +159,7 @@ const ProductDetailPage = () => {
             <div className='my-4'>
               <p className='font-bold text-[#333f48] text-[16px] cursor-pointer'>Kích cỡ</p>
             </div>
-            <div className='flex flex-wrap justify-start gap-[10px]'>
-              <div className='border-solid border-2 border-[#efefef] max-w-[30px] w-full flex justify-center items-center cursor-pointer'>
-                S
-              </div>
-              <div className='border-solid border-2 border-[#efefef] max-w-[30px] w-full flex justify-center items-center cursor-pointer'>
-                M
-              </div>
-              <div className='border-solid border-2 border-[#efefef] max-w-[30px] w-full flex justify-center items-center cursor-pointer'>
-                L
-              </div>
-              <div className='border-solid border-2 border-[#efefef] max-w-[30px] w-full flex justify-center items-center cursor-pointer'>
-                XL
-              </div>
-            </div>
+            <div className='flex flex-wrap justify-start gap-[10px]'>{renderSizes(productDetail?.sizes)}</div>
           </div>
           {/* end size */}
 
@@ -217,20 +248,7 @@ const ProductDetailPage = () => {
         <div>
           <p className='font-[600] text-2xl my-4'>Sản phẩm gợi ý</p>
         </div>
-        <div className='flex gap-[10px] flex-wrap justify-between items-center'>
-          <div className='max-w-[180px] md:max-w-[300px]'>
-            <CardProduct />
-          </div>
-          <div className='max-w-[180px] md:max-w-[300px]'>
-            <CardProduct />
-          </div>
-          <div className='max-w-[180px] md:max-w-[300px]'>
-            <CardProduct />
-          </div>
-          <div className='max-w-[180px] md:max-w-[300px]'>
-            <CardProduct />
-          </div>
-        </div>
+        <div className='flex gap-[10px] flex-wrap justify-between'>{renderProductsRelated(productsRelatedRender)}</div>
       </div>
       {/* end related product */}
     </div>
