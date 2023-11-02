@@ -114,8 +114,8 @@ const productSlice = createSlice({
           state.originalPrice_lte = 999999999999999;
           break;
         default:
-          state.originalPrice_gte = '';
-          state.originalPrice_lte = '';
+          state.originalPrice_gte = 0;
+          state.originalPrice_lte = 999999999999999;
           break;
       }
     },
