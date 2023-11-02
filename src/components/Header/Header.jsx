@@ -1,13 +1,17 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
 import IconButton from '@mui/material/IconButton';
 import { Divider, Avatar, TextField, MenuItem, Menu, Button } from '@mui/material';
 import { useState } from 'react';
 import CartDrawer from '../CartDrawer/CartDrawer';
+import { useDispatch, useSelector } from 'react-redux';
+import { saveLogout } from 'src/redux/reducer/authSlice';
+import { toast } from 'react-toastify';
 
 const Header = () => {
-  const user = true;
-
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const user = useSelector((state) => state.auth.user);
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -16,6 +20,20 @@ const Header = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+  const handleLogout = () => {
+    const resolveAfter2Sec = new Promise((resolve) => setTimeout(resolve, 1400));
+    toast
+      .promise(resolveAfter2Sec, {
+        pending: 'Đang đăng xuất !',
+        success: 'Đăng xuất thành công !'
+      })
+      .then(() => {
+        dispatch(saveLogout());
+        localStorage.removeItem('user');
+        navigate('/login');
+      });
+  };
+
   return (
     <header className='z-10 sticky top-0 left-0 right-0'>
       <div className='bg-white shadow-md  px-6 lg:px-0'>
@@ -51,7 +69,7 @@ const Header = () => {
           <div className='flex gap-2 lg:gap-6 items-center'>
             <div className='flex items-center flex-col'>
               <div
-                className='p-2 cursor-pointer'
+                className='p-2 cursor-pointer flex flex-col items-center'
                 id='account-button'
                 aria-controls={open ? 'account-menu' : undefined}
                 aria-haspopup='true'
@@ -59,8 +77,11 @@ const Header = () => {
                 onClick={handleClick}
               >
                 <IconButton>
-                  <Avatar sx={{ width: 24, height: 24 }} />
+                  <Avatar sx={user ? { width: 25, height: 25, bgcolor: '#1976d2' } : { width: 25, height: 25 }}>
+                    {user && user.fullName[0].toUpperCase()}
+                  </Avatar>
                 </IconButton>
+                {user && <p className='text-sm text-[#1976d2] hidden lg:block'>{user.fullName}</p>}
               </div>
               {user ? (
                 <Menu
@@ -89,7 +110,9 @@ const Header = () => {
                     </Link>
                   </MenuItem>
                   <MenuItem onClick={handleClose}>
-                    <p className='r-4 text-red-500'>Đăng xuất</p>
+                    <p className='r-4 text-red-500' onClick={handleLogout}>
+                      Đăng xuất
+                    </p>
                   </MenuItem>
                 </Menu>
               ) : (
