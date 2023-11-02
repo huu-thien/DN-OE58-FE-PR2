@@ -64,6 +64,7 @@ function App() {
           <Route path={ROUTES.BLOG_PAGE} element={<BlogPage />} />
           <Route path={ROUTES.USER_PROFILE_PAGE} element={<ProfilePage />} />
         </Route>
+
         <Route element={<AdminLayout />}>
           <Route path={ROUTES.ADMIN_DASHBOARD_PAGE} element={<AdminDashboard />} />
           <Route path={ROUTES.ADMIN_MANAGE_PRODUCT_PAGE} element={<AdminManageProduct />} />
