@@ -4,14 +4,23 @@ import { productService } from 'src/services/productService';
 const initialState = {
   products: [],
   productDetail: {},
+  pagination: {
+    _page: '',
+    _limit: 8,
+    _total: 8
+  },
+  q: '',
   params: {}
 };
 
-export const fetchProducts = createAsyncThunk('products/fetchProducts', async (params) => {
+export const fetchProducts = createAsyncThunk('products/fetchProducts', async (params = {}) => {
   const response = await productService.getProducts({
     ...params
   });
-  return response;
+  return {
+    data: response.data,
+    total: response.headers.get('X-Total-Count')
+  };
 });
 
 export const fetchProductDetail = createAsyncThunk('products/fetchProductDetail', async (id) => {
@@ -22,10 +31,23 @@ export const fetchProductDetail = createAsyncThunk('products/fetchProductDetail'
 const productSlice = createSlice({
   name: 'products',
   initialState: initialState,
-  reducers: {},
+  reducers: {
+    setNewPage: (state, action) => {
+      state.pagination = {
+        ...state.pagination,
+        _page: action.payload
+      };
+    },
+
+    setSearchKey: (state, action) => {
+      state.q = action.payload;
+      console.log(action.payload, 'aa');
+    }
+  },
   extraReducers: (builder) => {
     builder.addCase(fetchProducts.fulfilled, (state, action) => {
-      state.products = action.payload;
+      state.products = action.payload.data;
+      state.pagination._total = action.payload.total;
     });
 
     builder.addCase(fetchProductDetail.fulfilled, (state, action) => {
@@ -34,4 +56,5 @@ const productSlice = createSlice({
   }
 });
 
+export const { setNewPage, setSearchKey } = productSlice.actions;
 export const productReducer = productSlice.reducer;

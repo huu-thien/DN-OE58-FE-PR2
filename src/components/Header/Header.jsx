@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
 import IconButton from '@mui/material/IconButton';
 import { Divider, Avatar, TextField, MenuItem, Menu, Button } from '@mui/material';
@@ -7,6 +7,7 @@ import CartDrawer from '../CartDrawer/CartDrawer';
 import { useDispatch, useSelector } from 'react-redux';
 import { saveLogout } from 'src/redux/reducer/authSlice';
 import { toast } from 'react-toastify';
+import { setSearchKey } from 'src/redux/reducer/productSlice';
 
 const Header = () => {
   const navigate = useNavigate();
@@ -14,6 +15,23 @@ const Header = () => {
   const user = useSelector((state) => state.auth.user);
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
+  const [searchText, setSearchText] = useState('');
+  // eslint-disable-next-line no-unused-vars
+  const [searchParams, setSearchParams] = useSearchParams();
+  const urlParams = new URLSearchParams(window.location.search);
+
+  const onChangeSearchBox = (e) => {
+    setSearchText(e.target.value);
+  };
+
+  const handleGetSearchText = (e) => {
+    e.preventDefault();
+    urlParams.set('q', `${searchText}`);
+    setSearchParams(urlParams.toString());
+    dispatch(setSearchKey(searchText));
+    setSearchText('');
+  };
+
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -60,12 +78,20 @@ const Header = () => {
               </Link>
             </Button>
           </div>
-          <div className='relative w-full xs:w-[50%] md:max-w-[300px] '>
-            <TextField id='search-input' label='Search' variant='outlined' size='small' fullWidth />
+          <form onSubmit={handleGetSearchText} className='relative w-full xs:w-[50%] md:max-w-[300px] '>
+            <TextField
+              value={searchText}
+              onChange={onChangeSearchBox}
+              id='search-input'
+              label='Search'
+              variant='outlined'
+              size='small'
+              fullWidth
+            />
             <IconButton sx={{ position: 'absolute', right: '5px' }}>
               <SearchIcon />
             </IconButton>
-          </div>
+          </form>
           <div className='flex gap-2 lg:gap-6 items-center'>
             <div className='flex items-center flex-col'>
               <div

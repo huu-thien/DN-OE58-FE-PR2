@@ -326,7 +326,7 @@ const HomePage = () => {
               <div>
                 <img
                   className='w-full max-w-[400px]'
-                  src='https://media.canifa.com/mageplaza/blog/post//t/h/the-le-sieu-hoi-voucher.webp'
+                  src='https://media.canifa.com/mageplaza/blog/post//g/a/game-online-1.webp'
                   alt='life_1'
                 />
               </div>
@@ -343,7 +343,7 @@ const HomePage = () => {
               <div>
                 <img
                   className='w-full max-w-[400px]'
-                  src='https://media.canifa.com/mageplaza/blog/post//t/h/the-le-sieu-hoi-voucher.webp'
+                  src='https://media.canifa.com/mageplaza/blog/post//g/a/game-online-1.webp'
                   alt='life_1'
                 />
               </div>
@@ -360,7 +360,7 @@ const HomePage = () => {
               <div>
                 <img
                   className='w-full max-w-[400px]'
-                  src='https://media.canifa.com/mageplaza/blog/post//t/h/the-le-sieu-hoi-voucher.webp'
+                  src='https://media.canifa.com/mageplaza/blog/post//g/a/game-online-1.webp'
                   alt='life_1'
                 />
               </div>
@@ -377,7 +377,7 @@ const HomePage = () => {
               <div>
                 <img
                   className='w-full max-w-[400px]'
-                  src='https://media.canifa.com/mageplaza/blog/post//t/h/the-le-sieu-hoi-voucher.webp'
+                  src='https://media.canifa.com/mageplaza/blog/post//g/a/game-online-1.webp'
                   alt='life_1'
                 />
               </div>
