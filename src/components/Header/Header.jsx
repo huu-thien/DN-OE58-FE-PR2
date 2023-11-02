@@ -6,6 +6,8 @@ import { useState } from 'react';
 import CartDrawer from '../CartDrawer/CartDrawer';
 
 const Header = () => {
+  const user = true;
+
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -60,32 +62,64 @@ const Header = () => {
                   <Avatar sx={{ width: 24, height: 24 }} />
                 </IconButton>
               </div>
-              <Menu
-                id='account-menu'
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
-                MenuListProps={{
-                  'aria-labelledby': 'account-button'
-                }}
-              >
-                <MenuItem onClick={handleClose}>
-                  <Link to='/register' className='r-8'>
-                    Đăng kí
-                  </Link>
-                </MenuItem>
-                <MenuItem onClick={handleClose}>
-                  <Link to='/login' className='r-4'>
-                    Đăng nhập
-                  </Link>
-                </MenuItem>
-                <Divider />
-                <MenuItem onClick={handleClose}>
-                  <Link to='/login' className='r-4'>
-                    Trung tâm trợ giúp
-                  </Link>
-                </MenuItem>
-              </Menu>
+              {user ? (
+                <Menu
+                  id='account-menu'
+                  anchorEl={anchorEl}
+                  open={open}
+                  onClose={handleClose}
+                  MenuListProps={{
+                    'aria-labelledby': 'account-button'
+                  }}
+                >
+                  <MenuItem onClick={handleClose}>
+                    <Link to='/' className='r-4'>
+                      Thông tin tài khoản
+                    </Link>
+                  </MenuItem>
+                  <MenuItem onClick={handleClose}>
+                    <Link to='/purchase-history' className='r-4'>
+                      Lịch sử thanh toán
+                    </Link>
+                  </MenuItem>
+                  <Divider />
+                  <MenuItem onClick={handleClose}>
+                    <Link to='/login' className='r-4'>
+                      Trung tâm trợ giúp
+                    </Link>
+                  </MenuItem>
+                  <MenuItem onClick={handleClose}>
+                    <p className='r-4 text-red-500'>Đăng xuất</p>
+                  </MenuItem>
+                </Menu>
+              ) : (
+                <Menu
+                  id='account-menu'
+                  anchorEl={anchorEl}
+                  open={open}
+                  onClose={handleClose}
+                  MenuListProps={{
+                    'aria-labelledby': 'account-button'
+                  }}
+                >
+                  <MenuItem onClick={handleClose}>
+                    <Link to='/register' className='r-8'>
+                      Đăng kí
+                    </Link>
+                  </MenuItem>
+                  <MenuItem onClick={handleClose}>
+                    <Link to='/login' className='r-4'>
+                      Đăng nhập
+                    </Link>
+                  </MenuItem>
+                  <Divider />
+                  <MenuItem onClick={handleClose}>
+                    <Link to='/login' className='r-4'>
+                      Trung tâm trợ giúp
+                    </Link>
+                  </MenuItem>
+                </Menu>
+              )}
             </div>
             <CartDrawer />
           </div>
