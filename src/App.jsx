@@ -19,10 +19,6 @@ import ProfilePage from './pages/ProfilePage';
 import { useEffect } from 'react';
 import { fetchProducts } from './redux/reducer/productSlice';
 import { FormatPrice } from './utils/formatPrice';
-
-import { useEffect } from 'react';
-import { fetchProducts } from './redux/reducer/productSlice';
-
 import AdminLayout from './layouts/AdminLayout';
 import AdminDashboard from './pages/AdminDashboard';
 import AdminManageProduct from './pages/AdminManageProduct';
@@ -33,8 +29,6 @@ import AdminEditProduct from './pages/AdminEditProduct';
 import AdminAddProduct from './pages/AdminAddProduct';
 import AdminChartCategory from './pages/AdminChartCategory';
 import AdminChartTypeProduct from './pages/AdminChartTypeProduct';
-
-
 
 function App() {
   const dispatch = useDispatch();

@@ -5,12 +5,13 @@ import { Drawer, Badge, Box } from '@mui/material';
 import { useState } from 'react';
 import IconButton from '@mui/material/IconButton';
 import Button from '@mui/material/Button';
-
 import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { FormatPrice } from 'src/utils/formatPrice';
+import { clearCart } from 'src/redux/reducer/cartSlice';
 
 const CartDrawer = () => {
+  const dispatch = useDispatch();
   const { carts } = useSelector((state) => state.cart);
 
   const getTotalBill = () => {
@@ -18,6 +19,10 @@ const CartDrawer = () => {
       return accumulator + cartItem.price * (1 - cartItem.percentSale) * cartItem.quantity;
     }, 0);
     return FormatPrice(totalBill);
+  };
+
+  const handleClearCart = () => {
+    dispatch(clearCart());
   };
 
   const renderCarts = (carts) => {
@@ -59,7 +64,12 @@ const CartDrawer = () => {
               </IconButton>
             </div>
             <div className='flex justify-end pb-4'>
-              <Button sx={{ borderColor: 'red', color: 'red' }} size='small' variant='outlined'>
+              <Button
+                onClick={handleClearCart}
+                sx={{ borderColor: 'red', color: 'red' }}
+                size='small'
+                variant='outlined'
+              >
                 Xóa tất cả giỏ hàng
               </Button>
             </div>
