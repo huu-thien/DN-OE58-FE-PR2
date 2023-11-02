@@ -26,6 +26,7 @@ const CartDrawer = () => {
 
   const handleClearCart = () => {
     dispatch(clearCart());
+    toast.success('Xóa giỏ hàng thành công');
   };
 
   const renderCarts = (carts) => {

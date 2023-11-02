@@ -3,7 +3,10 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import CardProduct from 'src/components/CardProduct/CardProduct';
 import PropTypes from 'prop-types';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { fetchProductsHomePage } from 'src/redux/reducer/productSlice';
+import { useNavigate } from 'react-router-dom';
 
 const NextArrow = ({ className, style, onClick }) => {
   return (
@@ -36,15 +39,21 @@ PrevArrow.propTypes = {
 };
 
 const HomePage = () => {
-  const { products } = useSelector((state) => state.product);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const { productsHomePage } = useSelector((state) => state.product);
 
-  const productsClone = [...products];
+  useEffect(() => {
+    dispatch(fetchProductsHomePage());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const productsClone = [...productsHomePage];
   const productsSale = productsClone.filter((product) => product.percentSale !== 0);
   const productsMan = productsClone.filter((product) => product.productFor === 'man').slice(0, 4);
   const productsWoman = productsClone.filter((product) => product.productFor === 'woman').slice(0, 4);
-  const productsChild = productsClone
-    .filter((product) => product.productFor === 'childrenGirl' || product.productFor === 'childrenBoy')
-    .slice(0, 4);
+  const productsChildBoy = productsClone.filter((product) => product.productFor === 'childrenBoy').slice(0, 4);
+  const productsChildGirl = productsClone.filter((product) => product.productFor === 'childrenGirl').slice(0, 4);
 
   const settings = {
     dots: true,
@@ -112,7 +121,7 @@ const HomePage = () => {
     });
   };
 
-  const renderProductsChildren = (products) => {
+  const renderProductsChildrenBoy = (products) => {
     return products.map((product) => {
       return (
         <div key={product.id}>
@@ -120,6 +129,32 @@ const HomePage = () => {
         </div>
       );
     });
+  };
+
+  const renderProductsChildrenGirl = (products) => {
+    return products.map((product) => {
+      return (
+        <div key={product.id}>
+          <CardProduct product={product} />
+        </div>
+      );
+    });
+  };
+
+  const handleShowManProduct = () => {
+    navigate('/products?productFor=Nam');
+  };
+
+  const handleShowWomanProduct = () => {
+    navigate('/products?productFor=Nữ');
+  };
+
+  const handleChildrenBoyProduct = () => {
+    navigate('/products?productFor=Bé+trai');
+  };
+
+  const handleChildrenGirlProduct = () => {
+    navigate('/products?productFor=Bé+gái');
   };
 
   return (
@@ -202,10 +237,6 @@ const HomePage = () => {
         <div className='home__product-sale mt-8'>
           <div className='product-sale__title flex justify-between items-center mb-6'>
             <p className='uppercase font-[600] text-xl'>Sản phẩm giảm giá!</p>
-            <div className='cursor-pointer'>
-              <span>Xem thêm</span>
-              <span className='text-[red] font-bold ms-2'>{`>>`}</span>
-            </div>
           </div>
 
           <div className='product-sale__list'>
@@ -289,7 +320,9 @@ const HomePage = () => {
         <div className='mt-8'>
           <div className='mb-6 flex justify-between'>
             <p className='uppercase font-[600] text-xl'>Nam</p>
-            <p className='cursor-pointer me-2'>Xem thêm</p>
+            <p onClick={handleShowManProduct} className='cursor-pointer me-2'>
+              Xem thêm
+            </p>
           </div>
           <div className='flex justify-between gap-[10px]'>{renderProductsMan(productsMan)}</div>
         </div>
@@ -299,19 +332,35 @@ const HomePage = () => {
         <div className='mt-8'>
           <div className='mb-6 flex items-center justify-between'>
             <p className='uppercase font-[600] text-xl'>Nữ</p>
-            <p className='cursor-pointer me-2'>Xem thêm</p>
+            <p onClick={handleShowWomanProduct} className='cursor-pointer me-2'>
+              Xem thêm
+            </p>
           </div>
           <div className='flex justify-between gap-[10px]'>{renderProductsWoMan(productsWoman)}</div>
         </div>
         {/* end women product */}
 
-        {/* children product */}
+        {/* children boy product */}
         <div className='mt-8'>
           <div className='mb-6 flex items-center justify-between'>
-            <p className='uppercase font-[600] text-xl'>Trẻ em</p>
-            <p className='cursor-pointer me-2'>Xem thêm</p>
+            <p className='uppercase font-[600] text-xl'>Bé trai</p>
+            <p onClick={handleChildrenBoyProduct} className='cursor-pointer me-2'>
+              Xem thêm
+            </p>
           </div>
-          <div className='flex justify-between gap-[10px]'>{renderProductsChildren(productsChild)}</div>
+          <div className='flex justify-between gap-[10px]'>{renderProductsChildrenBoy(productsChildBoy)}</div>
+        </div>
+        {/* end children product */}
+
+        {/* children girl product */}
+        <div className='mt-8'>
+          <div className='mb-6 flex items-center justify-between'>
+            <p className='uppercase font-[600] text-xl'>Bé gái</p>
+            <p onClick={handleChildrenGirlProduct} className='cursor-pointer me-2'>
+              Xem thêm
+            </p>
+          </div>
+          <div className='flex justify-between gap-[10px]'>{renderProductsChildrenGirl(productsChildGirl)}</div>
         </div>
         {/* end children product */}
 

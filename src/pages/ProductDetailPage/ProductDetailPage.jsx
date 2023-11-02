@@ -14,6 +14,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { Controller, useForm } from 'react-hook-form';
 import { addCartItem } from 'src/redux/reducer/cartSlice';
 import { makeRandomIdCart } from 'src/utils/makeRandomIdCart';
+import { toast } from 'react-toastify';
 
 const schemaProductDetail = Yup.object().shape({
   color: Yup.string().required('Vui lòng chọn màu'),
@@ -48,6 +49,8 @@ const ProductDetailPage = () => {
       id: makeRandomIdCart(),
       idProduct: productDetail.id,
       ...formValue,
+      img: productDetail.images[0],
+      nameProduct: productDetail.nameProduct,
       quantity: quantity,
       price: productDetail.originalPrice,
       percentSale: productDetail.percentSale,
@@ -55,6 +58,7 @@ const ProductDetailPage = () => {
       typeProduct: productDetail.typeProduct
     };
     dispatch(addCartItem(formProductCart));
+    toast.success('Thêm sản phẩm thành công');
   };
 
   const productsClone = [...products];
