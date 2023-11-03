@@ -8,3 +8,7 @@ export const getListUsers = () => {
 export const postRegisterUser = (body) => {
   return http.post('users', body, { signal: controller.signal });
 };
+
+export const patchUpdateUser = (body, idUser) => {
+  return http.patch(`users/${idUser}`, body, { signal: controller.signal });
+};

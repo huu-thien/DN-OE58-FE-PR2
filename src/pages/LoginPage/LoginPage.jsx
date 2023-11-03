@@ -24,16 +24,14 @@ const Loginpage = () => {
     event.preventDefault();
   };
   const handleFormSubmit = async (values) => {
-    console.log(values);
     try {
       const response = await getListUsers();
       if (response && response.status === 200) {
         const listUsers = response.data;
         const userLogin = listUsers.find(
-          (user) => 
+          (user) =>
             (user.username === values.username || user.email === values.username) && user.password === values.password
         );
-        console.log(userLogin);
         if (userLogin) {
           const resolveAfter2Sec = new Promise((resolve) => setTimeout(resolve, 1400));
           toast
@@ -43,7 +41,8 @@ const Loginpage = () => {
             })
             .then(() => {
               localStorage.setItem('user', JSON.stringify(userLogin));
-              dispatch(saveLogin(JSON.parse(localStorage.getItem('user'))));
+              // dispatch(saveLogin(JSON.parse(localStorage.getItem('user'))));
+              dispatch(saveLogin(userLogin));
               navigate('/');
             });
         } else {

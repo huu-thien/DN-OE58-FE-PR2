@@ -47,7 +47,6 @@ const RegisterPage = () => {
           password: values.password
         };
         const responseRegister = await postRegisterUser(dataRegister);
-
         if (responseRegister && responseRegister.status === 201) {
           const resolveAfter2Sec = new Promise((resolve) => setTimeout(resolve, 1400));
           toast
@@ -64,7 +63,6 @@ const RegisterPage = () => {
       console.log(err);
     }
   };
-
   return (
     <div className='mx-auto w-full max-w-7xl'>
       <div className='py-5'>
@@ -96,9 +94,8 @@ const RegisterPage = () => {
                           <div className='relative'>
                             <TextField
                               sx={{
-                                fontFamily: 'Lexend',
                                 width: `100%`,
-                                marginBottom: '20px'
+                                marginBottom: '10px'
                               }}
                               id='fullName'
                               label='Full Name'
@@ -113,9 +110,8 @@ const RegisterPage = () => {
                           <div className='relative'>
                             <TextField
                               sx={{
-                                fontFamily: 'Lexend',
                                 width: `100%`,
-                                marginBottom: '20px'
+                                marginBottom: '10px'
                               }}
                               id='email'
                               label='Email'
@@ -130,7 +126,6 @@ const RegisterPage = () => {
                           <div className='relative'>
                             <TextField
                               sx={{
-                                fontFamily: 'Lexend',
                                 width: `100%`,
                                 marginBottom: '20px'
                               }}
@@ -147,9 +142,8 @@ const RegisterPage = () => {
                           <div className='relative mb-2'>
                             <TextField
                               sx={{
-                                fontFamily: 'Lexend',
                                 width: `100%`,
-                                marginBottom: '20px'
+                                marginBottom: '10px'
                               }}
                               id='password'
                               type={showPassword ? 'text' : 'password'}
@@ -177,9 +171,8 @@ const RegisterPage = () => {
                           <div className='relative mb-2'>
                             <TextField
                               sx={{
-                                fontFamily: 'Lexend',
                                 width: `100%`,
-                                marginBottom: '20px'
+                                marginBottom: '10px'
                               }}
                               id='confirmPassword'
                               type={showConfirmPassword ? 'text' : 'password'}

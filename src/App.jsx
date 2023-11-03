@@ -8,15 +8,14 @@ import LoginPage from './pages/LoginPage';
 import ProductPage from './pages/ProductPage';
 import ProductDetailPage from './pages/ProductDetailPage';
 import CheckoutPage from './pages/CheckoutPage';
-
 import BlogPage from './pages/BlogPage';
-
 import CheckoutSuccessPage from './pages/CheckoutSuccessPage';
 import PurchaseHistoryPage from './pages/PurchaseHistoryPage';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useDispatch } from 'react-redux';
 import { saveLogin } from './redux/reducer/authSlice';
+import ProfilePage from './pages/ProfilePage';
 
 function App() {
   const dispatch = useDispatch();
@@ -40,6 +39,7 @@ function App() {
           <Route path={ROUTES.CHECK_OUT_SUCCESS_PAGE} element={<CheckoutSuccessPage />} />
           <Route path={ROUTES.USER_PURCHASE_HISTORY_PAGE} element={<PurchaseHistoryPage />} />
           <Route path={ROUTES.BLOG_PAGE} element={<BlogPage />} />
+          <Route path={ROUTES.USER_PROFILE_PAGE} element={<ProfilePage />} />
         </Route>
       </Routes>
       <ToastContainer
