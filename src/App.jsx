@@ -13,18 +13,28 @@ import CheckoutSuccessPage from './pages/CheckoutSuccessPage';
 import PurchaseHistoryPage from './pages/PurchaseHistoryPage';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { saveLogin } from './redux/reducer/authSlice';
 import ProfilePage from './pages/ProfilePage';
+import { useEffect } from 'react';
+import { fetchProducts } from './redux/reducer/productSlice';
 
 function App() {
   const dispatch = useDispatch();
   const userLocal = localStorage.getItem('user');
+  const { params } = useSelector((state) => state.product);
+
   let user = null;
   if (userLocal !== null) {
     user = JSON.parse(userLocal);
     dispatch(saveLogin(user));
   }
+
+  useEffect(() => {
+    dispatch(fetchProducts({ ...params }));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <>
       <Routes>

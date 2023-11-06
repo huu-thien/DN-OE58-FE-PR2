@@ -7,8 +7,9 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
-const ProductList = () => {
+const ProductList = ({ products }) => {
   const [page, setPage] = useState(1);
   const [sortPrice, setSortPrice] = useState('');
 
@@ -19,6 +20,13 @@ const ProductList = () => {
   const handleChangePage = (event, value) => {
     setPage(value);
   };
+
+  const renderProducts = (products) => {
+    return products.map((product) => {
+      return <CardProduct key={product.id} product={product} />;
+    });
+  };
+
   return (
     <div className='flex flex-col gap-[20px] my-4'>
       <div className='flex justify-between items-center'>
@@ -55,15 +63,8 @@ const ProductList = () => {
       </div>
 
       {/* product list */}
-      <div className='product-list grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-[20px] gap-y-[40px]'>
-        <CardProduct />
-        <CardProduct />
-        <CardProduct />
-        <CardProduct />
-        <CardProduct />
-        <CardProduct />
-        <CardProduct />
-        <CardProduct />
+      <div className='product-list grid items-start grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-[20px] gap-y-[40px]'>
+        {renderProducts(products)}
       </div>
       {/* end product list */}
 
@@ -74,6 +75,10 @@ const ProductList = () => {
       {/* end pagination */}
     </div>
   );
+};
+
+ProductList.propTypes = {
+  products: PropTypes.array
 };
 
 export default ProductList;
