@@ -3,15 +3,22 @@ import AddIcon from '@mui/icons-material/Add';
 import Button from '@mui/material/Button';
 import RemoveIcon from '@mui/icons-material/Remove';
 import { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import { FormatPrice } from 'src/utils/formatPrice';
+import { deleteCartItem } from 'src/redux/reducer/cartSlice';
 
 const CartItem = (props) => {
+  const dispatch = useDispatch();
+
   const { products } = useSelector((state) => state.product);
   const { idProduct, color, size, quantity: quantityCartItem } = props.cartItem;
 
   const productItem = products.filter((product) => product.id === idProduct);
+
+  const handleDeleteCartItem = () => {
+    dispatch(deleteCartItem(idProduct));
+  };
 
   const [quantity, setQuantity] = useState(1);
   const handlePlus = () => {
@@ -53,7 +60,11 @@ const CartItem = (props) => {
                 <AddIcon sx={{ fontSize: 16 }} />
               </Button>
             </div>
-            <button type='button' className='font-medium text-indigo-600 hover:text-indigo-500'>
+            <button
+              type='button'
+              onClick={handleDeleteCartItem}
+              className='font-medium text-indigo-600 hover:text-indigo-500'
+            >
               Xóa
             </button>
           </div>
