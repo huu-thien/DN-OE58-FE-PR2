@@ -7,9 +7,25 @@ import IconButton from '@mui/material/IconButton';
 import Button from '@mui/material/Button';
 
 import { Link } from 'react-router-dom';
-
+import { useSelector } from 'react-redux';
+import { FormatPrice } from 'src/utils/formatPrice';
 
 const CartDrawer = () => {
+  const { carts } = useSelector((state) => state.cart);
+
+  const getTotalBill = () => {
+    const totalBill = carts.reduce((accumulator, cartItem) => {
+      return accumulator + cartItem.price * (1 - cartItem.percentSale) * cartItem.quantity;
+    }, 0);
+    return FormatPrice(totalBill);
+  };
+
+  const renderCarts = (carts) => {
+    return carts.map((cartItem, index) => {
+      return <CartItem key={index} cartItem={cartItem} />;
+    });
+  };
+
   // Cart
   const [state, setState] = useState({
     right: false
@@ -24,7 +40,7 @@ const CartDrawer = () => {
   return (
     <div className='flex items-center flex-col'>
       <div>
-        <Badge badgeContent={1} color='primary'>
+        <Badge badgeContent={carts.length} color='primary'>
           <IconButton onClick={toggleDrawer('right', true)}>
             <AddShoppingCartIcon color='primary' />
           </IconButton>
@@ -42,21 +58,17 @@ const CartDrawer = () => {
                 <ChevronRightIcon sx={{ color: 'rgb(14, 116 ,144)' }} />
               </IconButton>
             </div>
-            <div className="flex justify-end pb-4">
-              <Button sx={{borderColor: "red", color: 'red'}} size="small" variant='outlined'>Xóa tất cả giỏ hàng</Button>
+            <div className='flex justify-end pb-4'>
+              <Button sx={{ borderColor: 'red', color: 'red' }} size='small' variant='outlined'>
+                Xóa tất cả giỏ hàng
+              </Button>
             </div>
-            <div className='mb-48'>
-              <CartItem />
-              <CartItem />
-              <CartItem />
-              <CartItem />
-              <CartItem />
-            </div>
+            <div className='mb-48'>{renderCarts(carts)}</div>
           </Box>
           <div className='border-t border-gray-200 px-4 py-6 sm:px-6 absolute bottom-0 left-0 right-0 bg-white'>
             <div className='flex justify-between text-base font-medium text-gray-900'>
               <p>Giá trị đơn hàng</p>
-              <p>$262.00</p>
+              <p>{getTotalBill()} đ</p>
             </div>
             <p className='mt-0.5 text-sm text-gray-500'>Vận chuyển và thuế được tính khi thanh toán</p>
             <div className='mt-6'>

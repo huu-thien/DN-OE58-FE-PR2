@@ -9,10 +9,18 @@ import CardProduct from 'src/components/CardProduct/CardProduct';
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchProductDetail } from 'src/redux/reducer/productSlice';
+import * as Yup from 'yup';
+import { yupResolver } from '@hookform/resolvers/yup';
+import { Controller, useForm } from 'react-hook-form';
+import { addCartItem } from 'src/redux/reducer/cartSlice';
+
+const schemaProductDetail = Yup.object().shape({
+  color: Yup.string().required('Vui lòng chọn màu'),
+  size: Yup.string().required('Vui lòng chọn kích cỡ')
+});
 
 const ProductDetailPage = () => {
   const dispatch = useDispatch();
-  const [color, setColor] = useState('');
   const [quantity, setQuantity] = useState(1);
   const params = useParams();
   const { productDetail, products } = useSelector((state) => state.product);
@@ -20,6 +28,30 @@ const ProductDetailPage = () => {
   useEffect(() => {
     dispatch(fetchProductDetail(params.id));
   }, []);
+
+  const methods = useForm({
+    defaultValues: {
+      color: '',
+      size: ''
+    },
+    resolver: yupResolver(schemaProductDetail)
+  });
+  const {
+    handleSubmit,
+    control,
+    formState: { errors }
+  } = methods;
+
+  const onValid = (formValue) => {
+    const formProductCart = {
+      idProduct: productDetail.id,
+      ...formValue,
+      quantity: quantity,
+      price: productDetail.originalPrice,
+      percentSale: productDetail.percentSale
+    };
+    dispatch(addCartItem(formProductCart));
+  };
 
   const productsClone = [...products];
   const productsRelated = productsClone.filter(
@@ -37,12 +69,8 @@ const ProductDetailPage = () => {
     setNav2(slider2Ref.current);
   }, []);
 
-  const handleChangeColor = (event) => {
-    setColor(event.target.value);
-  };
-
   const handleChangeQuantity = (event) => {
-    setQuantity(event.target.value);
+    setQuantity(parseInt(event.target.value));
   };
 
   const handleIncreaseQuantity = () => {
@@ -77,12 +105,9 @@ const ProductDetailPage = () => {
   const renderSizes = (sizes) => {
     return sizes?.map((size, index) => {
       return (
-        <div
-          key={index}
-          className='border-solid border-2 border-[#efefef] max-w-[30px] w-full flex justify-center items-center cursor-pointer'
-        >
-          {size.toUpperCase()}
-        </div>
+        <MenuItem key={index} className='w-full flex justify-center items-center cursor-pointer uppercase' value={size}>
+          {size}
+        </MenuItem>
       );
     });
   };
@@ -111,7 +136,7 @@ const ProductDetailPage = () => {
           </Slider>
         </div>
 
-        <div className='product-detail__right-grp w-[40%] '>
+        <form onSubmit={handleSubmit(onValid)} className='product-detail__right-grp w-[40%] '>
           <div>
             <p className='text-xl lg:text-2xl font-[600]'>{productDetail?.nameProduct}</p>
           </div>
@@ -126,7 +151,6 @@ const ProductDetailPage = () => {
               {productDetail?.originalPrice} ₫
             </span>
             <span className={`font-[500] text-red-500 text-md ${productDetail.percentSale ? '' : 'hidden'}`}>
-              {' '}
               -{productDetail.percentSale * 100} %
             </span>
           </div>
@@ -136,20 +160,21 @@ const ProductDetailPage = () => {
               <p className='font-bold text-[#333f48] text-[16px]'>Màu sắc</p>
             </div>
             <div>
-              <Box>
-                <FormControl fullWidth>
-                  <InputLabel id='filter-color'>Màu sắc</InputLabel>
-                  <Select
-                    labelId='filter-color'
-                    id='selected-color-grp'
-                    value={color}
-                    label='Color'
-                    onChange={handleChangeColor}
-                  >
-                    {renderColors(productDetail.colors)}
-                  </Select>
-                </FormControl>
-              </Box>
+              <Controller
+                control={control}
+                name='color'
+                render={({ field }) => {
+                  return (
+                    <Box>
+                      <FormControl fullWidth>
+                        <InputLabel>Màu sắc</InputLabel>
+                        <Select {...field}>{renderColors(productDetail.colors)}</Select>
+                      </FormControl>
+                    </Box>
+                  );
+                }}
+              />
+              {!!errors.color?.message && <i className='text-red-500'>{errors.color?.message}</i>}
             </div>
           </div>
           {/* end color */}
@@ -159,7 +184,23 @@ const ProductDetailPage = () => {
             <div className='my-4'>
               <p className='font-bold text-[#333f48] text-[16px] cursor-pointer'>Kích cỡ</p>
             </div>
-            <div className='flex flex-wrap justify-start gap-[10px]'>{renderSizes(productDetail?.sizes)}</div>
+            <div>
+              <Controller
+                control={control}
+                name='size'
+                render={({ field }) => {
+                  return (
+                    <Box>
+                      <FormControl fullWidth>
+                        <InputLabel>Kích cỡ</InputLabel>
+                        <Select {...field}>{renderSizes(productDetail?.sizes)}</Select>
+                      </FormControl>
+                    </Box>
+                  );
+                }}
+              />
+              {!!errors.size?.message && <i className='text-red-500'>{errors.size?.message}</i>}
+            </div>
           </div>
           {/* end size */}
 
@@ -168,7 +209,7 @@ const ProductDetailPage = () => {
             <div className='my-4'>
               <p className='font-bold text-[#333f48] text-[16px] cursor-pointer'>Số lượng</p>
             </div>
-            <button onClick={handleDecreaseQuantity} className='border-solid border-2 w-[40px] h-[40px]'>
+            <button type='button' onClick={handleDecreaseQuantity} className='border-solid border-2 w-[40px] h-[40px]'>
               -
             </button>
             <input
@@ -177,7 +218,7 @@ const ProductDetailPage = () => {
               className='border-solid border-2 w-[40px] h-[40px] text-center'
               onChange={handleChangeQuantity}
             />
-            <button onClick={handleIncreaseQuantity} className='border-solid border-2 w-[40px] h-[40px]'>
+            <button type='button' onClick={handleIncreaseQuantity} className='border-solid border-2 w-[40px] h-[40px]'>
               +
             </button>
           </div>
@@ -185,7 +226,9 @@ const ProductDetailPage = () => {
 
           {/* btn-add-to-cart */}
           <div className='flex justify-center items-center border-b-2 border-solid border-[#efefef] py-8'>
-            <button className='bg-red-500 text-white w-full h-[60px] text-lg font-bold'>Thêm vào giỏ hàng</button>
+            <button type='submit' className='bg-red-500 text-white w-full h-[60px] text-lg font-bold'>
+              Thêm vào giỏ hàng
+            </button>
           </div>
           {/* end btn-add-to-cart */}
 
@@ -202,7 +245,7 @@ const ProductDetailPage = () => {
             </div>
           </div>
           {/* end description */}
-        </div>
+        </form>
       </div>
 
       {/* block service */}

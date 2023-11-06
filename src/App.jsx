@@ -16,6 +16,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { saveLogin } from './redux/reducer/authSlice';
 import ProfilePage from './pages/ProfilePage';
+import { useEffect } from 'react';
+import { fetchProducts } from './redux/reducer/productSlice';
+import { FormatPrice } from './utils/formatPrice';
 
 import { useEffect } from 'react';
 import { fetchProducts } from './redux/reducer/productSlice';
@@ -36,7 +39,6 @@ import AdminChartTypeProduct from './pages/AdminChartTypeProduct';
 function App() {
   const dispatch = useDispatch();
   const userLocal = localStorage.getItem('user');
-
   const { params } = useSelector((state) => state.product);
 
   let user = null;
@@ -53,6 +55,7 @@ function App() {
 
   return (
     <>
+      <FormatPrice />
       <Routes>
         <Route element={<MainLayout />}>
           <Route path={ROUTES.LOGIN_PAGE} element={<LoginPage />} />

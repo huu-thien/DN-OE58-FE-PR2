@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { generatePath, useNavigate } from 'react-router-dom';
 import { ROUTES } from 'src/routes/routeConfig';
+import { FormatPrice } from 'src/utils/formatPrice';
 
 const CardProduct = ({ product }) => {
   const navigate = useNavigate();
@@ -21,10 +22,12 @@ const CardProduct = ({ product }) => {
         >
           {product?.nameProduct}
         </p>
-        <p className='card__price-sale font-bold'>{product?.originalPrice * (1 - product?.percentSale)} đ</p>
+        <p className='card__price-sale font-bold'>
+          {FormatPrice(product?.originalPrice * (1 - product?.percentSale))} đ
+        </p>
         <div className='flex justify-start items-center gap-[10px]'>
           <span className={`card__price-original line-through ${product?.percentSale ? '' : 'hidden'}`}>
-            {product?.originalPrice} đ
+            {FormatPrice(product?.originalPrice)} đ
           </span>
           <span className={`card__price-sale-percent text-[red] ${product?.percentSale ? '' : 'hidden'}`}>
             {product?.percentSale * 100} %
