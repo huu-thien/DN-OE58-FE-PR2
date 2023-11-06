@@ -41,7 +41,6 @@ const Loginpage = () => {
             })
             .then(() => {
               localStorage.setItem('user', JSON.stringify(userLogin));
-              // dispatch(saveLogin(JSON.parse(localStorage.getItem('user'))));
               dispatch(saveLogin(userLogin));
               navigate('/');
             });
