@@ -1,38 +1,152 @@
-import PurchaseHistoryItem from './PurchaseHistoryItem';
+import { Box } from '@mui/material';
+import { DataGrid, GridToolbar } from '@mui/x-data-grid';
+import { useState } from 'react';
+import { getListOrder } from 'src/services/adminService';
+import { useEffect } from 'react';
+// import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
+import Chip from '@mui/material/Chip';
+import { useSelector } from 'react-redux';
 
-const PurchaseHisoryList = () => {
+const AdminManageRevenue = () => {
+  const user = useSelector((state) => state.auth.user);
+  const [listOrderUser, setListOrderUser] = useState([]);
+
+  useEffect(() => {
+    getListAccountFromDB();
+  }, []);
+  const getListAccountFromDB = async () => {
+    try {
+      const response = await getListOrder();
+      console.log(response);
+      if (response && response.status === 200) {
+        const listOrder = response.data.filter((order) => Number(order.idUser) === Number(user.id));
+        setListOrderUser(listOrder);
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const columns = [
+    { field: 'id', headerName: 'ID' },
+    {
+      field: 'createdAt',
+      headerName: 'Ngày thanh toán',
+      flex: 1,
+      cellClassName: 'name-column--cell'
+    },
+    {
+      field: 'cardHolder',
+      headerName: 'Tên khách hàng',
+      flex: 1
+    },
+    {
+      field: 'cardNumber',
+      headerName: 'Số thẻ',
+      align: 'left',
+      flex: 1
+    },
+    {
+      field: 'phone',
+      headerName: 'Số điện thoại',
+      align: 'left',
+      flex: 1
+    },
+    {
+      field: 'totalBill',
+      headerName: 'Tổng tiền',
+      type: 'number',
+      headerAlign: 'left',
+      flex: 1,
+      align: 'left'
+    },
+    {
+      field: 'status',
+      headerName: 'Trạng thái',
+      flex: 1,
+      renderCell: ({ row: { status } }) => {
+        return (
+          <Chip
+            label={status === 'pending' ? 'Đang chờ' : 'Thành công'}
+            sx={
+              status === 'pending'
+                ? { backgroundColor: '#fff4ea', color: '#ffb26c' }
+                : { backgroundColor: '#deeeec', color: '#12ae9b' }
+            }
+          />
+        );
+      }
+    },
+    {
+      field: 'action',
+      headerName: 'Action',
+      align: 'left',
+      flex: 1,
+      renderCell: ({ row: { id } }) => {
+        return (
+          <>
+            <Link
+              to={`/admin-manage-accounts/edit/${id}`}
+              type='button'
+              className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2 mr-2 focus:outline-none'
+            >
+              Xem chi tiết
+            </Link>
+          </>
+        );
+      }
+    }
+  ];
+
   return (
-    <table className='min-w-full leading-normal'>
-      <thead>
-        <tr>
-          <th className='px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider'>
-            Ngày thanh toán
-          </th>
-          <th className='px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider'>
-            Số thẻ
-          </th>
-          <th className='px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider'>
-            Tên chủ thẻ
-          </th>
-          <th className='px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider'>
-            Tổng tiền
-          </th>
-          <th className='px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider'>
-            Trạng thái
-          </th>
-          <th className='px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider'>
-            Xem chi tiết
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <PurchaseHistoryItem />
-        <PurchaseHistoryItem />
-        <PurchaseHistoryItem />
-        <PurchaseHistoryItem />
-      </tbody>
-    </table>
+    <div className='p-4'>
+      <Box
+        m='40px 0 0 0'
+        height='75vh'
+        sx={{
+          '& .MuiDataGrid-root': {
+            border: 'none'
+          },
+          '& .MuiDataGrid-cell': {
+            borderBottom: 'none'
+          },
+          '& .name-column--cell': {
+            // color: colors.greenAccent[300]
+          },
+          '& .MuiDataGrid-columnHeaders': {
+            backgroundColor: 'rgba(226,35,26,0.1)',
+            borderBottom: 'none'
+          },
+          '& .MuiDataGrid-virtualScroller': {
+            // backgroundColor: colors.primary[400]
+          },
+          '& .MuiDataGrid-footerContainer': {
+            borderTop: 'none',
+            backgroundColor: 'rgba(226,35,26,0.1)'
+          },
+          '& .MuiDataGrid-toolbarContainer .MuiButton-text': {
+            color: `#da291c !important`
+          }
+        }}
+      >
+        <DataGrid
+          rows={listOrderUser}
+          columns={columns}
+          components={{ Toolbar: GridToolbar }}
+          initialState={{
+            pagination: {
+              paginationModel: {
+                pageSize: 10
+              }
+            }
+          }}
+          // disableRowSelectionOnClick
+          // pageSizeOptions={[2]}
+        />
+      </Box>
+    </div>
   );
 };
 
-export default PurchaseHisoryList;
+export default AdminManageRevenue;

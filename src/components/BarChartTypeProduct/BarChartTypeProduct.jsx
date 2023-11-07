@@ -1,55 +1,166 @@
 import { ResponsiveBar } from '@nivo/bar';
+import { useEffect, useState } from 'react';
+import { getAllOrders } from 'src/services/checkoutService';
 
-const mockBarData = [
-  {
-    Category: 'Nam',
-    shirt: 137,
-    shirtColor: 'hsl(229, 70%, 50%)',
-    trouser: 96,
-    trouserColor: 'hsl(296, 70%, 50%)',
-    dress: 72,
-    kebabColor: 'hsl(97, 70%, 50%)',
-    outfit: 140,
-    outfitColor: 'hsl(340, 70%, 50%)'
-  },
-  {
-    Category: 'Nữ',
-    shirt: 55,
-    shirtColor: 'hsl(307, 70%, 50%)',
-    trouser: 28,
-    trouserColor: 'hsl(111, 70%, 50%)',
-    dress: 58,
-    kebabColor: 'hsl(273, 70%, 50%)',
-    outfit: 29,
-    outfitColor: 'hsl(275, 70%, 50%)'
-  },
-  {
-    Category: 'Bé trai',
-    shirt: 109,
-    shirtColor: 'hsl(72, 70%, 50%)',
-    trouser: 23,
-    trouserColor: 'hsl(96, 70%, 50%)',
-    dress: 34,
-    kebabColor: 'hsl(106, 70%, 50%)',
-    outfit: 152,
-    outfitColor: 'hsl(256, 70%, 50%)'
-  },
-  {
-    Category: 'Bé gái',
-    shirt: 133,
-    shirtColor: 'hsl(257, 70%, 50%)',
-    trouser: 52,
-    trouserColor: 'hsl(326, 70%, 50%)',
-    dress: 43,
-    kebabColor: 'hsl(110, 70%, 50%)',
-    outfit: 83,
-    outfitColor: 'hsl(9, 70%, 50%)'
-  }
-];
+
 const BarCharttypeProduct = () => {
+  const [listOrderDB, setListOrderDB] = useState([]);
+  useEffect(() => {
+    getAllOrdersFromDB();
+  }, []);
+  const getAllOrdersFromDB = async () => {
+    const response = await getAllOrders();
+    if (response && response.status === 200) {
+      setListOrderDB(response.data);
+    }
+  };
+  const allProductsInOrder = [];
+  for (const order of listOrderDB) {
+    // Lặp qua từng sản phẩm trong listProduct của đơn đặt hàng
+    for (const product of order.listProduct) {
+      allProductsInOrder.push(product);
+    }
+  }
+
+  const productOfMan = allProductsInOrder.filter((product) => product.productFor === 'man');
+  const productOfWoman = allProductsInOrder.filter((product) => product.productFor === 'woman');
+  const productOfChildrenGirl = allProductsInOrder.filter((product) => product.productFor === 'childrenGirl');
+  const productOfChildrenBoy = allProductsInOrder.filter((product) => product.productFor === 'childrenBoy');
+
+  let manShirt = 0;
+  let manTrouser = 0;
+  let manDress = 0;
+  let manOutfit = 0;
+  productOfMan.forEach((product) => {
+    switch (product.typeProduct) {
+      case 'Áo':
+        manShirt += product.price * (1 - product.percentSale) * product.quantity;
+        break;
+      case 'Quần':
+        manTrouser += product.price * (1 - product.percentSale) * product.quantity;
+        break;
+      case 'Váy':
+        manDress += product.price * (1 - product.percentSale) * product.quantity;
+        break;
+      case 'Đồ bộ':
+        manOutfit += product.price * (1 - product.percentSale) * product.quantity;
+        break;
+    }
+  });
+
+  let womanShirt = 0;
+  let womanTrouser = 0;
+  let womanDress = 0;
+  let womanOutfit = 0;
+  productOfWoman.forEach((product) => {
+    switch (product.typeProduct) {
+      case 'Áo':
+        womanShirt += product.price * (1 - product.percentSale) * product.quantity;
+        break;
+      case 'Quần':
+        womanTrouser += product.price * (1 - product.percentSale) * product.quantity;
+        break;
+      case 'Váy':
+        womanDress += product.price * (1 - product.percentSale) * product.quantity;
+        break;
+      case 'Đồ bộ':
+        womanOutfit += product.price * (1 - product.percentSale) * product.quantity;
+        break;
+    }
+  });
+
+  let childrenGirlShirt = 0;
+  let childrenGirlTrouser = 0;
+  let childrenGirlDress = 0;
+  let childrenGirlOutfit = 0;
+  productOfChildrenGirl.forEach((product) => {
+    switch (product.typeProduct) {
+      case 'Áo':
+        childrenGirlShirt += product.price * (1 - product.percentSale) * product.quantity;
+        break;
+      case 'Quần':
+        childrenGirlTrouser += product.price * (1 - product.percentSale) * product.quantity;
+        break;
+      case 'Váy':
+        childrenGirlDress += product.price * (1 - product.percentSale) * product.quantity;
+        break;
+      case 'Đồ bộ':
+        childrenGirlOutfit += product.price * (1 - product.percentSale) * product.quantity;
+        break;
+    }
+  });
+
+  let childrenBoyShirt = 0;
+  let childrenBoyTrouser = 0;
+  let childrenBoyDress = 0;
+  let childrenBoyOutfit = 0;
+  productOfChildrenBoy.forEach((product) => {
+    switch (product.typeProduct) {
+      case 'Áo':
+        childrenBoyShirt += product.price * (1 - product.percentSale) * product.quantity;
+        break;
+      case 'Quần':
+        childrenBoyTrouser += product.price * (1 - product.percentSale) * product.quantity;
+        break;
+      case 'Váy':
+        childrenBoyDress += product.price * (1 - product.percentSale) * product.quantity;
+        break;
+      case 'Đồ bộ':
+        childrenBoyOutfit += product.price * (1 - product.percentSale) * product.quantity;
+        break;
+    }
+  });
+
+  const dataRenevueByTypeProduct = [
+    {
+      Category: 'Nam',
+      shirt: manShirt,
+      shirtColor: 'hsl(229, 70%, 50%)',
+      trouser: manTrouser,
+      trouserColor: 'hsl(296, 70%, 50%)',
+      dress: manDress,
+      kebabColor: 'hsl(97, 70%, 50%)',
+      outfit: manOutfit,
+      outfitColor: 'hsl(340, 70%, 50%)'
+    },
+    {
+      Category: 'Nữ',
+      shirt: womanShirt,
+      shirtColor: 'hsl(307, 70%, 50%)',
+      trouser: womanTrouser,
+      trouserColor: 'hsl(111, 70%, 50%)',
+      dress: womanDress,
+      kebabColor: 'hsl(273, 70%, 50%)',
+      outfit: womanOutfit,
+      outfitColor: 'hsl(275, 70%, 50%)'
+    },
+    {
+      Category: 'Bé trai',
+      shirt: childrenBoyShirt,
+      shirtColor: 'hsl(72, 70%, 50%)',
+      trouser: childrenBoyTrouser,
+      trouserColor: 'hsl(96, 70%, 50%)',
+      dress: childrenBoyDress,
+      kebabColor: 'hsl(106, 70%, 50%)',
+      outfit: childrenBoyOutfit,
+      outfitColor: 'hsl(256, 70%, 50%)'
+    },
+    {
+      Category: 'Bé gái',
+      shirt: childrenGirlShirt,
+      shirtColor: 'hsl(257, 70%, 50%)',
+      trouser: childrenGirlTrouser,
+      trouserColor: 'hsl(326, 70%, 50%)',
+      dress: childrenGirlDress,
+      kebabColor: 'hsl(110, 70%, 50%)',
+      outfit: childrenGirlOutfit,
+      outfitColor: 'hsl(9, 70%, 50%)'
+    }
+  ];
+
   return (
     <ResponsiveBar
-      data={mockBarData}
+      data={dataRenevueByTypeProduct}
       theme={{
         axis: {
           domain: {
@@ -140,11 +251,11 @@ const BarCharttypeProduct = () => {
       }}
       axisLeft={{
         tickSize: 5,
-        tickPadding: 5,
+        tickPadding: 2,
         tickRotation: 0,
         legend: 'Doanh thu',
         legendPosition: 'middle',
-        legendOffset: -40
+        legendOffset: -55
       }}
       labelSkipWidth={12}
       labelSkipHeight={12}

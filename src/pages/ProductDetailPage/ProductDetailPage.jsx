@@ -50,7 +50,9 @@ const ProductDetailPage = () => {
       ...formValue,
       quantity: quantity,
       price: productDetail.originalPrice,
-      percentSale: productDetail.percentSale
+      percentSale: productDetail.percentSale,
+      productFor: productDetail.productFor,
+      typeProduct: productDetail.typeProduct
     };
     dispatch(addCartItem(formProductCart));
   };
