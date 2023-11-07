@@ -48,27 +48,18 @@ const ProfilePage = () => {
       toast.error('Chỉnh sửa thất bại !');
     }
   };
-  let [email, username, fullName, address, phone, imageUrl] = ['', '', '', '', '', ''];
-  if (user) {
-    email = user.email;
-    username = user.username;
-    fullName = user.fullName;
-    address = user.address;
-    phone = user.phone;
-    imageUrl = user.imageUrl;
-  }
 
   const phoneNumberRegex = /^\d{10}$/;
   const emailRegex =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   const initialValues = {
-    fullName: fullName ? fullName : '',
-    email: email ? email : '',
-    username: username ? username : '',
-    address: address ? address : '',
-    phone: phone ? phone : '',
-    imageUrl: imageUrl ? imageUrl : ''
+    fullName: user.fullName || '',
+    email: user.email || '',
+    username: user.username || '',
+    address: user.address || '',
+    phone: user.phone || '',
+    imageUrl: user.imageUrl || ''
   };
   const ProfileInfoSchema = yup.object().shape({
     fullName: yup.string().min(3, 'Tối thiểu 3 kí tự').max(50, 'Tối đa 50 kí tự').required('Tên đầy đủ là bắt buộc'),

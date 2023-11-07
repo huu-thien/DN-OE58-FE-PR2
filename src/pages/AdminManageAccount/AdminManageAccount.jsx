@@ -122,7 +122,7 @@ const AdminManageAccount = () => {
             // color: colors.greenAccent[300]
           },
           '& .MuiDataGrid-columnHeaders': {
-            backgroundColor: '#70d8bd',
+            backgroundColor: 'rgba(226,35,26,0.1)',
             borderBottom: 'none'
           },
           '& .MuiDataGrid-virtualScroller': {
@@ -130,7 +130,7 @@ const AdminManageAccount = () => {
           },
           '& .MuiDataGrid-footerContainer': {
             borderTop: 'none',
-            backgroundColor: '#70d8bd'
+            backgroundColor: 'rgba(226,35,26,0.1)'
           },
           '& .MuiDataGrid-toolbarContainer .MuiButton-text': {
             color: `#da291c !important`

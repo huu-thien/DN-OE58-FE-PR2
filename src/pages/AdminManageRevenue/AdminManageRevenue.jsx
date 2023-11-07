@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 import { useState } from 'react';
-import {  getListOrder } from 'src/services/adminService';
+import { getListOrder } from 'src/services/adminService';
 import { useEffect } from 'react';
 // import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
@@ -33,15 +33,7 @@ const AdminManageRevenue = () => {
       cellClassName: 'name-column--cell'
     },
     {
-      field: 'totalPayments',
-      headerName: 'Tổng tiền',
-      type: 'number',
-      headerAlign: 'left',
-      flex: 1,
-      align: 'left'
-    },
-    {
-      field: 'nameCustomer',
+      field: 'cardHolder',
       headerName: 'Tên khách hàng',
       flex: 1
     },
@@ -50,6 +42,20 @@ const AdminManageRevenue = () => {
       headerName: 'Số thẻ',
       align: 'left',
       flex: 1
+    },
+    {
+      field: 'phone',
+      headerName: 'Số điện thoại',
+      align: 'left',
+      flex: 1
+    },
+    {
+      field: 'totalBill',
+      headerName: 'Tổng tiền',
+      type: 'number',
+      headerAlign: 'left',
+      flex: 1,
+      align: 'left'
     },
     {
       field: 'status',
@@ -106,7 +112,7 @@ const AdminManageRevenue = () => {
             // color: colors.greenAccent[300]
           },
           '& .MuiDataGrid-columnHeaders': {
-            backgroundColor: '#70d8bd',
+            backgroundColor: 'rgba(226,35,26,0.1)',
             borderBottom: 'none'
           },
           '& .MuiDataGrid-virtualScroller': {
@@ -114,7 +120,7 @@ const AdminManageRevenue = () => {
           },
           '& .MuiDataGrid-footerContainer': {
             borderTop: 'none',
-            backgroundColor: '#70d8bd'
+            backgroundColor: 'rgba(226,35,26,0.1)'
           },
           '& .MuiDataGrid-toolbarContainer .MuiButton-text': {
             color: `#da291c !important`
