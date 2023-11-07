@@ -13,6 +13,7 @@ import * as Yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { Controller, useForm } from 'react-hook-form';
 import { addCartItem } from 'src/redux/reducer/cartSlice';
+import { makeRandomIdCart } from 'src/utils/makeRandomIdCart';
 
 const schemaProductDetail = Yup.object().shape({
   color: Yup.string().required('Vui lòng chọn màu'),
@@ -44,6 +45,7 @@ const ProductDetailPage = () => {
 
   const onValid = (formValue) => {
     const formProductCart = {
+      id: makeRandomIdCart(),
       idProduct: productDetail.id,
       ...formValue,
       quantity: quantity,
