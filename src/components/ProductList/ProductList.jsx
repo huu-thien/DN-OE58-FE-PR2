@@ -39,8 +39,8 @@ const ProductList = () => {
   const categoryParamURL = searchParams.get('typeProduct');
   const sizeParamURL = searchParams.get('sizes_like');
   const colorParamURL = searchParams.get('colors_like');
-  const priceGteParamURL = searchParams.get('originalPrice_gte');
-  const priceLteParamURL = searchParams.get('originalPrice_lte');
+  const priceGteParamURL = parseInt(searchParams.get('originalPrice_gte'));
+  const priceLteParamURL = parseInt(searchParams.get('originalPrice_lte'));
 
   let productForParamURL;
   const textProductFor = searchParams.get('productFor');
@@ -70,8 +70,8 @@ const ProductList = () => {
         typeProduct: category || categoryParamURL,
         sizes_like: size || sizeParamURL,
         colors_like: color || colorParamURL,
-        originalPrice_gte: originalPrice_gte || priceGteParamURL,
-        originalPrice_lte: originalPrice_lte || priceLteParamURL,
+        originalPrice_gte: priceGteParamURL || originalPrice_gte,
+        originalPrice_lte: priceLteParamURL || originalPrice_lte,
         _page: currentPageParamURL || pagination._page,
         _limit: pagination._limit
       })

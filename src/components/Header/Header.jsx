@@ -7,7 +7,7 @@ import CartDrawer from '../CartDrawer/CartDrawer';
 import { useDispatch, useSelector } from 'react-redux';
 import { saveLogout } from 'src/redux/reducer/authSlice';
 import { toast } from 'react-toastify';
-import { setSearchKey } from 'src/redux/reducer/productSlice';
+import { actClearFilter, setSearchKey } from 'src/redux/reducer/productSlice';
 
 const Header = () => {
   const navigate = useNavigate();
@@ -52,6 +52,10 @@ const Header = () => {
       });
   };
 
+  const handleRedirectToProductPage = () => {
+    dispatch(actClearFilter());
+  };
+
   return (
     <header className='z-10 sticky top-0 left-0 right-0'>
       <div className='bg-white shadow-md  px-6 lg:px-0'>
@@ -67,7 +71,7 @@ const Header = () => {
             </Button>
             <div>
               <Button>
-                <Link to='/products' className='font-bold text-md'>
+                <Link onClick={handleRedirectToProductPage} to='/products' className='font-bold text-md'>
                   Sản phẩm
                 </Link>
               </Button>
