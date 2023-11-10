@@ -145,7 +145,8 @@ const AdminManageProduct = () => {
             backgroundColor: 'rgba(226,35,26,0.1)'
           },
           '& .MuiDataGrid-toolbarContainer .MuiButton-text': {
-            color: `#da291c !important`
+            color: `#da291c !important`,
+            marginBottom: 2
           }
         }}
       >

@@ -88,7 +88,7 @@ const PaymentPage = () => {
       .min(3, 'Tối thiểu 3 kí tự')
       .max(400, 'Tối đa 400 kí tự')
       .required('Địa chỉ nhận hàng là bắt buộc'),
-    phone: yup.string().matches(phoneNumberRegex, 'Số điện thoại không hợp lệ')
+    phone: yup.string().matches(phoneNumberRegex, 'Số điện thoại không hợp lệ').required('Số điện thoại là bắt buộc'),
   });
 
   return (
