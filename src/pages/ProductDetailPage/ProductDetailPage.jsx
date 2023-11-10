@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import Slider from 'react-slick';
 import Box from '@mui/material/Box';
-import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
@@ -15,6 +14,9 @@ import { Controller, useForm } from 'react-hook-form';
 import { addCartItem } from 'src/redux/reducer/cartSlice';
 import { makeRandomIdCart } from 'src/utils/makeRandomIdCart';
 import { toast } from 'react-toastify';
+import IconButton from '@mui/material/IconButton';
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
 
 const schemaProductDetail = Yup.object().shape({
   color: Yup.string().required('Vui lòng chọn màu'),
@@ -29,7 +31,7 @@ const ProductDetailPage = () => {
 
   useEffect(() => {
     dispatch(fetchProductDetail(params.id));
-  }, []);
+  }, [params, dispatch]);
 
   const methods = useForm({
     defaultValues: {
@@ -146,16 +148,20 @@ const ProductDetailPage = () => {
 
         <form onSubmit={handleSubmit(onValid)} className='product-detail__right-grp w-[40%] '>
           <div>
-            <p className='text-xl lg:text-2xl font-[600]'>{productDetail?.nameProduct}</p>
+            <p className='text-xl font-bold lg:text-2xl text-gray-700'>{productDetail?.nameProduct}</p>
           </div>
           <div>
             <p className='my-4'>Mã sp: {productDetail?.codeProduct}</p>
           </div>
           <div>
-            <p className='font-bold text-lg'>{productDetail?.originalPrice * (1 - productDetail.percentSale)} ₫</p>
+            <p className='font-bold text-xl text-gray-700 '>
+              {productDetail?.originalPrice * (1 - productDetail.percentSale)} ₫
+            </p>
           </div>
           <div>
-            <span className={`text-lg line-through me-[20px] ${productDetail.percentSale ? '' : 'hidden'}`}>
+            <span
+              className={`text-md line-through me-[20px] text-gray-500 ${productDetail.percentSale ? '' : 'hidden'}`}
+            >
               {productDetail?.originalPrice} ₫
             </span>
             <span className={`font-[500] text-red-500 text-md ${productDetail.percentSale ? '' : 'hidden'}`}>
@@ -175,7 +181,7 @@ const ProductDetailPage = () => {
                   return (
                     <Box>
                       <FormControl fullWidth>
-                        <InputLabel>Màu sắc</InputLabel>
+                        {/* <InputLabel>Màu sắc</InputLabel> */}
                         <Select {...field}>{renderColors(productDetail.colors)}</Select>
                       </FormControl>
                     </Box>
@@ -200,7 +206,7 @@ const ProductDetailPage = () => {
                   return (
                     <Box>
                       <FormControl fullWidth>
-                        <InputLabel>Kích cỡ</InputLabel>
+                        {/* <InputLabel>Kích cỡ</InputLabel> */}
                         <Select {...field}>{renderSizes(productDetail?.sizes)}</Select>
                       </FormControl>
                     </Box>
@@ -217,24 +223,24 @@ const ProductDetailPage = () => {
             <div className='my-4'>
               <p className='font-bold text-[#333f48] text-[16px] cursor-pointer'>Số lượng</p>
             </div>
-            <button type='button' onClick={handleDecreaseQuantity} className='border-solid border-2 w-[40px] h-[40px]'>
-              -
-            </button>
+            <IconButton aria-label='minus-quantity' color='primary' onClick={handleDecreaseQuantity}  sx={{color: '#ef4444'}}>
+              < RemoveIcon />
+            </IconButton>
             <input
               type='text'
               value={quantity}
-              className='border-solid border-2 w-[40px] h-[40px] text-center'
+              className='border-solid border-2 w-[40px] h-[40px] text-center mx-2'
               onChange={handleChangeQuantity}
             />
-            <button type='button' onClick={handleIncreaseQuantity} className='border-solid border-2 w-[40px] h-[40px]'>
-              +
-            </button>
+            <IconButton aria-label='add-quantity' color='primary' onClick={handleIncreaseQuantity} sx={{color: '#ef4444'}}>
+              <AddIcon />
+            </IconButton>
           </div>
           {/* end quantity */}
 
           {/* btn-add-to-cart */}
           <div className='flex justify-center items-center border-b-2 border-solid border-[#efefef] py-8'>
-            <button type='submit' className='bg-red-500 text-white w-full h-[60px] text-lg font-bold'>
+            <button type='submit' className='w-full flex items-center justify-center rounded-md border border-transparent bg-[#da291c] px-6 py-4 text-lg font-medium text-white shadow-sm hover:bg-[#eb574c]'>
               Thêm vào giỏ hàng
             </button>
           </div>

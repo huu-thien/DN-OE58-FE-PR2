@@ -1,7 +1,8 @@
 import axios from 'axios';
+// import 'dotenv/config' 
 
 const http = axios.create({
-  baseURL: 'http://localhost:3000/'
+  baseURL: import.meta.env.VITE_REACT_APP_BE_URL
 });
 // Add a response interceptor
 http.interceptors.request.use(

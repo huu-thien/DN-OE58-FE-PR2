@@ -11,6 +11,7 @@ import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
 import { saveLogin } from 'src/redux/reducer/authSlice';
 import LoginedSection from 'src/components/LoginedSection';
+import ButtonLoginGoogle from 'src/components/ButtonLoginGoogle/ButtonLoginGoogle';
 
 const Loginpage = () => {
   const user = useSelector((state) => state.auth.user);
@@ -150,7 +151,7 @@ const Loginpage = () => {
                       )}
                     </Formik>
                     <Divider sx={{ mt: '8px', color: '#ff385c' }} />
-                    {/* <ButtonLoginGoogle /> */}
+                    <ButtonLoginGoogle />
                   </div>
                 </div>
               </div>

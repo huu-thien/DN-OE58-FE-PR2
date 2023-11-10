@@ -6,40 +6,41 @@
       "username": "dung",
       "email": "Dung11@gmail.com",
       "password": "D_123456",
-      "role": "admin",
+      "role": "user",
       "phone": "0346282603",
       "address": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
       "imageUrl": "https://www.w3schools.com/w3images/avatar6.png"
     },
     {
       "id": 2,
-      "fullName": "Nguyễn Hữu Thiện huhu",
-      "username": "thien123",
+      "fullName": "Nguyễn Hữu Thiện",
+      "username": "thien",
       "email": "thien1@gmail.com",
       "password": "T_123456",
-      "role": "user",
+      "role": "admin",
       "address": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
       "phone": "0346282603",
-      "imageUrl": ""
-    },
-    {
-      "fullName": "Nguyễn Hữu Thiện",
-      "username": "thiendeptrai",
-      "email": "nhthien.dut@gmail.com",
-      "password": "Thien@123",
-      "id": 3,
-      "role": "user"
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0fD8K3vn_KC4vBp8VBb1tWYomAQEDsF_MFw&usqp=CAU"
     },
     {
       "fullName": "Chuyên Tâm",
       "username": "chuyentam",
       "email": "chuyentamgvn@gmail.com",
       "password": "Chuyen@123",
-      "role": "admin",
+      "role": "user",
       "id": 4,
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0fD8K3vn_KC4vBp8VBb1tWYomAQEDsF_MFw&usqp=CAU",
       "address": "",
       "phone": ""
+    },
+    {
+      "fullName": "Thiện Nguyễn Hữu",
+      "username": "nhthien.dut@gmail.com",
+      "email": "nhthien.dut@gmail.com",
+      "password": "User@123",
+      "role": "user",
+      "imageUrl": "https://lh3.googleusercontent.com/a/ACg8ocLPnRYqLKhD87V7c5vjCHVOm7DDf9z4RMOjmHk8rozwKg=s96-c",
+      "id": 5
     }
   ],
   "blogs": [],
@@ -53,13 +54,26 @@
       "typeProduct": "Áo",
       "productFor": "man",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["pink", "green", "black"],
-      "sizes": ["s", "m", "l", "xl"],
+      "colors": [
+        "pink",
+        "green",
+        "black"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/5/t/5ts23w002-sw142-1.webp",
         "https://canifa.com/img/1000/1500/resize/5/t/5ts23w002-sb422-xl-1-u.webp",
@@ -76,13 +90,25 @@
       "productFor": "man",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["blue", "white"],
-      "sizes": ["s", "m", "l", "xl"],
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/8/t/8th23w008-sl165-xl-1-u.webp",
         "https://canifa.com/img/1000/1500/resize/8/t/8th23w008-sl165-xl-6.webp",
@@ -99,13 +125,26 @@
       "productFor": "woman",
       "typeProduct": "Đồ bộ",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["orange", "black", "pink"],
-      "sizes": ["s", "m", "l", "xl"],
+      "colors": [
+        "orange",
+        "black",
+        "pink"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/6/s/6st23w002-se239-m-1-ghep-u.webp",
         "https://canifa.com/img/1000/1500/resize/6/s/6st23w002-sk010-m-1-ghep-u.webp",
@@ -122,13 +161,23 @@
       "productFor": "woman",
       "typeProduct": "Váy",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["black"],
-      "sizes": ["s", "m", "l"],
+      "colors": [
+        "black"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/6/d/6ds23w006-sk010-m-1-u.webp",
         "https://canifa.com/img/1000/1500/resize/6/d/6ds23w006-sk010-m-2.webp",
@@ -145,13 +194,24 @@
       "productFor": "childrenGirl",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["pink", "lightBlue"],
-      "sizes": ["s", "m", "l"],
+      "colors": [
+        "pink",
+        "lightBlue"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fb488-130-1-u.webp",
         "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fb488-130-2.webp",
@@ -168,13 +228,23 @@
       "productFor": "childrenGirl",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["yellow"],
-      "sizes": ["s", "m", "l"],
+      "colors": [
+        "yellow"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/1/t/1te20w018-sy079-110-1.webp",
         "https://canifa.com/img/1000/1500/resize/1/t/1te20w018-sy079-110-2.webp",
@@ -191,13 +261,24 @@
       "productFor": "childrenBoy",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["grey", "white"],
-      "sizes": ["s", "m", "l"],
+      "colors": [
+        "grey",
+        "white"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/2/t/2tp23w007-sw001-1.webp",
         "https://canifa.com/img/1000/1500/resize/2/t/2tp23w007-sw001-3.webp",
@@ -214,13 +295,24 @@
       "productFor": "childrenBoy",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["purpleCharcoal", "white"],
-      "sizes": ["s", "m", "l"],
+      "colors": [
+        "purpleCharcoal",
+        "white"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/2/t/2th23a001-sb195-1.webp",
         "https://canifa.com/img/1000/1500/resize/2/t/2th23a001-sb195-120-1.webp",
@@ -237,13 +329,23 @@
       "productFor": "man",
       "typeProduct": "Quần",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["Nỉ"],
+      "material": [
+        "Nỉ"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["grey", "black"],
-      "sizes": ["s", "m", "l", "xl"],
+      "colors": [
+        "grey",
+        "black"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/8/b/8bp23w006-sb422-xl-1-u.webp",
         "https://canifa.com/img/1000/1500/resize/8/b/8bp23w006-sb422-xl-2.webp",
@@ -260,13 +362,23 @@
       "productFor": "man",
       "typeProduct": "Quần",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["blue"],
-      "sizes": ["s", "m", "l"],
+      "colors": [
+        "blue"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/8/b/8bj23a001-sj771-1.webp",
         "https://canifa.com/img/1000/1500/resize/8/b/8bj23a001-sj771-1.webp",
@@ -283,13 +395,24 @@
       "productFor": "man",
       "typeProduct": "Đồ bộ",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["yellow"],
-      "sizes": ["s", "m", "l", "xl"],
+      "colors": [
+        "yellow"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/8/s/8st22w005-sy029-2.webp",
         "https://canifa.com/img/1000/1500/resize/8/s/8st22w005-sy029-xl-1.webp",
@@ -306,13 +429,25 @@
       "productFor": "man",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["60% cotton", "40% polyester"],
+      "material": [
+        "60% cotton",
+        "40% polyester"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["yellow", "white", "blue"],
-      "sizes": ["s", "m", "l", "xl"],
+      "colors": [
+        "yellow",
+        "white",
+        "blue"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-1-thumb.webp",
         "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-2.webp",
@@ -330,13 +465,26 @@
       "typeProduct": "Áo",
       "productFor": "man",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["pink", "green", "black"],
-      "sizes": ["s", "m", "l", "xl"],
+      "colors": [
+        "pink",
+        "green",
+        "black"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/5/t/5ts23w002-sw142-1.webp",
         "https://canifa.com/img/1000/1500/resize/5/t/5ts23w002-sb422-xl-1-u.webp",
@@ -353,13 +501,25 @@
       "productFor": "man",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["blue", "white"],
-      "sizes": ["s", "m", "l", "xl"],
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/8/t/8th23w008-sl165-xl-1-u.webp",
         "https://canifa.com/img/1000/1500/resize/8/t/8th23w008-sl165-xl-6.webp",
@@ -376,13 +536,26 @@
       "productFor": "woman",
       "typeProduct": "Đồ bộ",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["orange", "black", "pink"],
-      "sizes": ["s", "m", "l", "xl"],
+      "colors": [
+        "orange",
+        "black",
+        "pink"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/6/s/6st23w002-se239-m-1-ghep-u.webp",
         "https://canifa.com/img/1000/1500/resize/6/s/6st23w002-sk010-m-1-ghep-u.webp",
@@ -399,13 +572,23 @@
       "productFor": "woman",
       "typeProduct": "Váy",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["black"],
-      "sizes": ["s", "m", "l"],
+      "colors": [
+        "black"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/6/d/6ds23w006-sk010-m-1-u.webp",
         "https://canifa.com/img/1000/1500/resize/6/d/6ds23w006-sk010-m-2.webp",
@@ -422,13 +605,24 @@
       "productFor": "childrenGirl",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["pink", "lightBlue"],
-      "sizes": ["s", "m", "l"],
+      "colors": [
+        "pink",
+        "lightBlue"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/1/t/1te20w018-sy079-110-1.webp",
         "https://canifa.com/img/1000/1500/resize/1/t/1te20w018-sy079-110-2.webp",
@@ -445,13 +639,23 @@
       "productFor": "childrenGirl",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["yellow"],
-      "sizes": ["s", "m", "l"],
+      "colors": [
+        "yellow"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fb488-130-1-u.webp",
         "https://canifa.com/img/1000/1500/resize/1/t/1te20w018-sy079-110-2.webp",
@@ -468,13 +672,24 @@
       "productFor": "childrenBoy",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["grey", "white"],
-      "sizes": ["s", "m", "l"],
+      "colors": [
+        "grey",
+        "white"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/2/t/2tp23w007-sw001-1.webp",
         "https://canifa.com/img/1000/1500/resize/2/t/2tp23w007-sw001-3.webp",
@@ -491,13 +706,24 @@
       "productFor": "childrenBoy",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["purpleCharcoal", "white"],
-      "sizes": ["s", "m", "l"],
+      "colors": [
+        "purpleCharcoal",
+        "white"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/2/t/2th23a001-sb195-1.webp",
         "https://canifa.com/img/1000/1500/resize/2/t/2th23a001-sb195-120-1.webp",
@@ -514,13 +740,23 @@
       "productFor": "man",
       "typeProduct": "Quần",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["Nỉ"],
+      "material": [
+        "Nỉ"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["grey", "black"],
-      "sizes": ["s", "m", "l", "xl"],
+      "colors": [
+        "grey",
+        "black"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/8/b/8bp23w006-sb422-xl-1-u.webp",
         "https://canifa.com/img/1000/1500/resize/8/b/8bp23w006-sb422-xl-2.webp",
@@ -537,13 +773,23 @@
       "productFor": "man",
       "typeProduct": "Quần",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["blue"],
-      "sizes": ["s", "m", "l"],
+      "colors": [
+        "blue"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/8/b/8bj23a001-sj771-1.webp",
         "https://canifa.com/img/1000/1500/resize/8/b/8bj23a001-sj771-1.webp",
@@ -560,13 +806,24 @@
       "productFor": "man",
       "typeProduct": "Đồ bộ",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["yellow"],
-      "sizes": ["s", "m", "l", "xl"],
+      "colors": [
+        "yellow"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/8/s/8st22w005-sy029-2.webp",
         "https://canifa.com/img/1000/1500/resize/8/s/8st22w005-sy029-xl-1.webp",
@@ -583,13 +840,25 @@
       "productFor": "man",
       "typeProduct": "Áo",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["60% cotton", "40% polyester"],
+      "material": [
+        "60% cotton",
+        "40% polyester"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["yellow", "white", "blue"],
-      "sizes": ["s", "m", "l", "xl"],
+      "colors": [
+        "yellow",
+        "white",
+        "blue"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-1-thumb.webp",
         "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-2.webp",
@@ -607,13 +876,26 @@
       "productFor": "woman",
       "typeProduct": "Đồ bộ",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["orange", "black", "pink"],
-      "sizes": ["s", "m", "l", "xl"],
+      "colors": [
+        "orange",
+        "black",
+        "pink"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/6/s/6st23w002-se239-m-1-ghep-u.webp",
         "https://canifa.com/img/1000/1500/resize/6/s/6st23w002-sk010-m-1-ghep-u.webp",
@@ -630,13 +912,23 @@
       "productFor": "woman",
       "typeProduct": "Váy",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["black"],
-      "sizes": ["s", "m", "l"],
+      "colors": [
+        "black"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/6/d/6ds23w006-sk010-m-1-u.webp",
         "https://canifa.com/img/1000/1500/resize/6/d/6ds23w006-sk010-m-2.webp",
@@ -653,13 +945,24 @@
       "productFor": "man",
       "typeProduct": "Đồ bộ",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["yellow"],
-      "sizes": ["s", "m", "l", "xl"],
+      "colors": [
+        "yellow"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/8/s/8st22w005-sy029-2.webp",
         "https://canifa.com/img/1000/1500/resize/8/s/8st22w005-sy029-xl-1.webp",
@@ -676,13 +979,26 @@
       "productFor": "woman",
       "typeProduct": "Đồ bộ",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["orange", "black", "pink"],
-      "sizes": ["s", "m", "l", "xl"],
+      "colors": [
+        "orange",
+        "black",
+        "pink"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/6/s/6st23w002-se239-m-1-ghep-u.webp",
         "https://canifa.com/img/1000/1500/resize/6/s/6st23w002-sk010-m-1-ghep-u.webp",
@@ -699,13 +1015,23 @@
       "productFor": "woman",
       "typeProduct": "Váy",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["black"],
-      "sizes": ["s", "m", "l"],
+      "colors": [
+        "black"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/6/d/6ds23w006-sk010-m-1-u.webp",
         "https://canifa.com/img/1000/1500/resize/6/d/6ds23w006-sk010-m-2.webp",
@@ -722,13 +1048,24 @@
       "productFor": "man",
       "typeProduct": "Đồ bộ",
       "description": "Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.Sản phẩm chất lượng cao, mặc thoải mái, thoáng mát.",
-      "material": ["40% cotton", "41% acrylic", "19% nylon"],
+      "material": [
+        "40% cotton",
+        "41% acrylic",
+        "19% nylon"
+      ],
       "rate": {
         "starAverage": 4,
         "count": 15
       },
-      "colors": ["yellow"],
-      "sizes": ["s", "m", "l", "xl"],
+      "colors": [
+        "yellow"
+      ],
+      "sizes": [
+        "s",
+        "m",
+        "l",
+        "xl"
+      ],
       "images": [
         "https://canifa.com/img/1000/1500/resize/8/s/8st22w005-sy029-2.webp",
         "https://canifa.com/img/1000/1500/resize/8/s/8st22w005-sy029-xl-1.webp",
@@ -959,6 +1296,113 @@
       ],
       "status": "success",
       "id": 8
+    },
+    {
+      "email": "Dung11@gmail.com",
+      "cardHolder": "Nguyễn Hữu Dũng",
+      "cardNumber": "5555-8888-9999",
+      "billingAddress": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
+      "phone": "0346282603",
+      "idUser": 1,
+      "totalBill": 637500,
+      "createdAt": "10/11/2023 09:46:33",
+      "listProduct": [
+        {
+          "id": "ZeWPdwoScT04heGRDgHHH0SVTynS00uNDXdD6tqNzqDm7vMDo9FmF1v0DM3owR",
+          "idProduct": 31,
+          "color": "brown",
+          "size": "xxl",
+          "img": "https://sites.create-cdn.net/siteimages/28/4/9/284928/15/7/9/15798435/761x1000.jpg?1505296014",
+          "nameProduct": "Vay dep 123",
+          "quantity": 1,
+          "price": 950000,
+          "percentSale": 0.35,
+          "productFor": "woman",
+          "typeProduct": "Váy"
+        }
+      ],
+      "status": "success",
+      "id": 9
+    },
+    {
+      "email": "thiencute180402@gmail.com",
+      "cardHolder": "Hữu Thiện Nguyễn",
+      "cardNumber": "1234-5432-5543",
+      "billingAddress": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
+      "phone": "0346282603",
+      "totalBill": 429000,
+      "createdAt": "10/11/2023 10:37:51",
+      "listProduct": [
+        {
+          "id": "BP22MnGz3n7zt7zX96WI46lFIpgh9sNXytc2EmMt3A7P1xc93zeKFzEIDamzee",
+          "idProduct": 5,
+          "color": "lightBlue",
+          "size": "m",
+          "img": "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fb488-130-1-u.webp",
+          "nameProduct": "Áo gilet len bé gái cổ tim",
+          "quantity": 1,
+          "price": 349000,
+          "percentSale": 0,
+          "productFor": "childrenGirl",
+          "typeProduct": "Áo"
+        }
+      ],
+      "status": "success",
+      "id": 10
+    },
+    {
+      "email": "nhthien.dut@gmail.com",
+      "cardHolder": "Thiện Nguyễn Hữu",
+      "cardNumber": "2222-4444-5555",
+      "billingAddress": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
+      "phone": "0346282603",
+      "idUser": 5,
+      "totalBill": 231650,
+      "createdAt": "10/11/2023 10:42:34",
+      "listProduct": [
+        {
+          "id": "vXjiJYxRyGY0FJtjB7b2PT6XSazHbBEfE21aAVzvPg7q54aCk0ov3neN9glUoL",
+          "idProduct": 7,
+          "color": "white",
+          "size": "s",
+          "img": "https://canifa.com/img/1000/1500/resize/2/t/2tp23w007-sw001-1.webp",
+          "nameProduct": "Áo polo dài tay bé trai cotton USA có hình in",
+          "quantity": 1,
+          "price": 249000,
+          "percentSale": 0.15,
+          "productFor": "childrenBoy",
+          "typeProduct": "Áo"
+        }
+      ],
+      "status": "success",
+      "id": 11
+    },
+    {
+      "email": "nhthien.dut@gmail.com",
+      "cardHolder": "Thiện Nguyễn Hữu",
+      "cardNumber": "1234-6666-7777",
+      "billingAddress": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
+      "phone": "0346282603",
+      "idUser": 5,
+      "totalBill": 579000,
+      "createdAt": "10/11/2023 10:54:13",
+      "listProduct": [
+        {
+          "id": "Ze8B8QKZMMnPC0WSRLskO4dlc9BE25xGrDgGcuOj1FgldRU2PqpQn8F0b4v7c2",
+          "idProduct": 2,
+          "color": "white",
+          "size": "m",
+          "img": "https://canifa.com/img/1000/1500/resize/8/t/8th23w008-sl165-xl-1-u.webp",
+          "nameProduct": "Áo sơ mi Oxford nam cotton dài tay",
+          "quantity": 1,
+          "price": 499000,
+          "percentSale": 0,
+          "productFor": "man",
+          "typeProduct": "Áo"
+        }
+      ],
+      "status": "success",
+      "id": 12
     }
   ]
 }

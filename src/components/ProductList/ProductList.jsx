@@ -10,11 +10,13 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { actSetSortPrice, fetchProducts, setNewPage, setProductFor } from 'src/redux/reducer/productSlice';
 import { useSearchParams } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-const ProductList = () => {
+const ProductList = ({selectedProductFor, setSelectedProductFor}) => {
   const dispatch = useDispatch();
   const [page, setPage] = useState(1);
   const [sortPrice, setSortPrice] = useState('');
+
   const [searchParams, setSearchParams] = useSearchParams();
   const {
     products,
@@ -98,6 +100,7 @@ const ProductList = () => {
     urlParams.set('productFor', `${e.target.outerText}`);
     setSearchParams(urlParams.toString());
     dispatch(setProductFor(e.target.outerText));
+    setSelectedProductFor(e.target.outerText);
   };
 
   const renderProducts = (products) => {
@@ -112,25 +115,25 @@ const ProductList = () => {
         <ul className='flex gap-[30px] flex-wrap'>
           <li
             onClick={handleGetProductFor}
-            className='border-solid border-2 rounded-full px-6 py-2 cursor-pointer border-[#d3d3d3] min-w-[40px]'
+            className={`border-solid border-2 rounded-full px-6 py-2 cursor-pointer border-[#d3d3d3] min-w-[40px] ${selectedProductFor === 'Nam' ? 'text-red-500 font-bold' : 'text-black'}`}
           >
             Nam
           </li>
           <li
             onClick={handleGetProductFor}
-            className='border-solid border-2 rounded-full px-6 py-2 cursor-pointer border-[#d3d3d3] min-w-[40px]'
+            className={`border-solid border-2 rounded-full px-6 py-2 cursor-pointer border-[#d3d3d3] min-w-[40px] ${selectedProductFor === 'Nữ' ? 'text-red-500 font-bold' : 'text-black'}`}
           >
             Nữ
           </li>
           <li
             onClick={handleGetProductFor}
-            className='border-solid border-2 rounded-full px-6 py-2 cursor-pointer border-[#d3d3d3] min-w-[40px]'
+            className={`border-solid border-2 rounded-full px-6 py-2 cursor-pointer border-[#d3d3d3] min-w-[40px] ${selectedProductFor === 'Bé trai' ? 'text-red-500 font-bold' : 'text-black'}`}
           >
             Bé trai
           </li>
           <li
             onClick={handleGetProductFor}
-            className='border-solid border-2 rounded-full px-6 py-2 cursor-pointer border-[#d3d3d3] min-w-[40px]'
+            className={`border-solid border-2 rounded-full px-6 py-2 cursor-pointer border-[#d3d3d3] min-w-[40px] ${selectedProductFor === 'Bé gái' ? 'text-red-500 font-bold' : 'text-black'}`}
           >
             Bé gái
           </li>
@@ -175,5 +178,9 @@ const ProductList = () => {
     </div>
   );
 };
+ProductList.propTypes = {
+  selectedProductFor: PropTypes.string,
+  setSelectedProductFor: PropTypes.func
+}
 
 export default ProductList;

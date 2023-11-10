@@ -18,14 +18,14 @@ const CardProduct = ({ product }) => {
       <div className='card__content flex flex-col justify-center  gap-[4px] mt-2 w-[80%]'>
         <p
           onClick={handleRedirectToProductDetail}
-          className='card__title overflow-hidden text-ellipsis line-clamp-2 text-[#333f48] cursor-pointer'
+          className='card__title overflow-hidden text-ellipsis line-clamp-2 text-gray-800 cursor-pointer'
         >
           {product?.nameProduct}
         </p>
-        <p className='card__price-sale font-bold'>
+        <p className='card__price-sale font-bold text-gray-700'>
           {FormatPrice(product?.originalPrice * (1 - product?.percentSale))} đ
         </p>
-        <div className='flex justify-start items-center gap-[10px]'>
+        <div className='flex justify-start items-center gap-[10px] text-gray-500'>
           <span className={`card__price-original line-through ${product?.percentSale ? '' : 'hidden'}`}>
             {FormatPrice(product?.originalPrice)} đ
           </span>
