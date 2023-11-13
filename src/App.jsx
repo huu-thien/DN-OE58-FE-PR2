@@ -27,6 +27,7 @@ import AdminEditProduct from './pages/AdminEditProduct';
 import AdminAddProduct from './pages/AdminAddProduct';
 import AdminChartCategory from './pages/AdminChartCategory';
 import AdminChartTypeProduct from './pages/AdminChartTypeProduct';
+import PurchaseDetailPage from './pages/PurchaseDetailPage/PurchaseDetailPage';
 
 function App() {
   const dispatch = useDispatch();
@@ -55,6 +56,7 @@ function App() {
           <Route path={ROUTES.USER_PURCHASE_HISTORY_PAGE} element={<PurchaseHistoryPage />} />
           <Route path={ROUTES.BLOG_PAGE} element={<BlogPage />} />
           <Route path={ROUTES.USER_PROFILE_PAGE} element={<ProfilePage />} />
+          <Route path={ROUTES.USER_PURCHASE_DETAILS_PAGE} element={<PurchaseDetailPage />} />
         </Route>
 
         <Route element={<AdminLayout />}>

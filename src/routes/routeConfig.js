@@ -7,6 +7,7 @@ export const ROUTES = {
   USER_PROFILE_PAGE: '/profile',
   CART_PAGE: '/cart',
   USER_PURCHASE_HISTORY_PAGE: '/purchase-history',
+  USER_PURCHASE_DETAILS_PAGE: '/purchase-detail/:id',
   CHECK_OUT_PAGE: '/checkout',
   CHECK_OUT_SUCCESS_PAGE: '/checkout-success',
   ORDER_PAGE: '/order',
@@ -20,5 +21,4 @@ export const ROUTES = {
   ADMIN_MANAGE_PRODUCT_ADD_PAGE: '/admin-manage-products/add',
   ADMIN_CHART_CATEGORY: '/admin-chart-category',
   ADMIN_BAR_CATEGORY: '/admin-chart-type',
-
 };

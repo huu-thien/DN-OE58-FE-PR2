@@ -53,7 +53,7 @@ const RegisterPage = () => {
           toast
             .promise(resolveAfter2Sec, {
               pending: 'Đang tạo tài khoản !',
-              success: 'Đăng kí tài khoản thành công !'
+              success: 'Đăng kí tài khoản thành công'
             })
             .then(() => {
               navigate('/login');

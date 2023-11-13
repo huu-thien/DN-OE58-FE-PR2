@@ -11,8 +11,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import { actSetSortPrice, fetchProducts, setNewPage, setProductFor } from 'src/redux/reducer/productSlice';
 import { useSearchParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import Alert from '@mui/material/Alert';
 
-const ProductList = ({selectedProductFor, setSelectedProductFor}) => {
+const ProductList = ({ selectedProductFor, setSelectedProductFor }) => {
+  const listProduct = useSelector((state) => state.product.products);
   const dispatch = useDispatch();
   const [page, setPage] = useState(1);
   const [sortPrice, setSortPrice] = useState('');
@@ -110,77 +112,96 @@ const ProductList = ({selectedProductFor, setSelectedProductFor}) => {
   };
 
   return (
-    <div className='flex flex-col gap-[20px] my-4'>
-      <div className='flex justify-between items-center'>
-        <ul className='flex gap-[30px] flex-wrap'>
-          <li
-            onClick={handleGetProductFor}
-            className={`border-solid border-2 rounded-full px-6 py-2 cursor-pointer border-[#d3d3d3] min-w-[40px] ${selectedProductFor === 'Nam' ? 'text-red-500 font-bold' : 'text-black'}`}
-          >
-            Nam
-          </li>
-          <li
-            onClick={handleGetProductFor}
-            className={`border-solid border-2 rounded-full px-6 py-2 cursor-pointer border-[#d3d3d3] min-w-[40px] ${selectedProductFor === 'Nữ' ? 'text-red-500 font-bold' : 'text-black'}`}
-          >
-            Nữ
-          </li>
-          <li
-            onClick={handleGetProductFor}
-            className={`border-solid border-2 rounded-full px-6 py-2 cursor-pointer border-[#d3d3d3] min-w-[40px] ${selectedProductFor === 'Bé trai' ? 'text-red-500 font-bold' : 'text-black'}`}
-          >
-            Bé trai
-          </li>
-          <li
-            onClick={handleGetProductFor}
-            className={`border-solid border-2 rounded-full px-6 py-2 cursor-pointer border-[#d3d3d3] min-w-[40px] ${selectedProductFor === 'Bé gái' ? 'text-red-500 font-bold' : 'text-black'}`}
-          >
-            Bé gái
-          </li>
-        </ul>
-        <Box>
-          <FormControl fullWidth>
-            <InputLabel id='filter-sort-price'>Sắp xếp theo</InputLabel>
-            <Select
-              className='h-[50px] min-w-[180px]'
-              labelId='filter-sort-price'
-              id='selected-sort-price-grp'
-              value={sortPrice}
-              label='sort-price'
-              onChange={handleChangeSortPrice}
+    <>
+      <div className='flex flex-col gap-[20px] my-4'>
+        <div className='flex justify-between items-center'>
+          <ul className='flex gap-[30px] flex-wrap'>
+            <li
+              onClick={handleGetProductFor}
+              className={`border-solid border-2 rounded-full px-6 py-2 cursor-pointer border-[#d3d3d3] min-w-[40px] ${
+                selectedProductFor === 'Nam' ? 'text-red-500 font-bold' : 'text-black'
+              }`}
             >
-              <MenuItem value={'asc'}>Giá tăng dần</MenuItem>
-              <MenuItem value={'desc'}>Giá giảm dần</MenuItem>
-            </Select>
-          </FormControl>
-        </Box>
-      </div>
+              Nam
+            </li>
+            <li
+              onClick={handleGetProductFor}
+              className={`border-solid border-2 rounded-full px-6 py-2 cursor-pointer border-[#d3d3d3] min-w-[40px] ${
+                selectedProductFor === 'Nữ' ? 'text-red-500 font-bold' : 'text-black'
+              }`}
+            >
+              Nữ
+            </li>
+            <li
+              onClick={handleGetProductFor}
+              className={`border-solid border-2 rounded-full px-6 py-2 cursor-pointer border-[#d3d3d3] min-w-[40px] ${
+                selectedProductFor === 'Bé trai' ? 'text-red-500 font-bold' : 'text-black'
+              }`}
+            >
+              Bé trai
+            </li>
+            <li
+              onClick={handleGetProductFor}
+              className={`border-solid border-2 rounded-full px-6 py-2 cursor-pointer border-[#d3d3d3] min-w-[40px] ${
+                selectedProductFor === 'Bé gái' ? 'text-red-500 font-bold' : 'text-black'
+              }`}
+            >
+              Bé gái
+            </li>
+          </ul>
+          <Box>
+            <FormControl fullWidth>
+              <InputLabel id='filter-sort-price'>Sắp xếp theo</InputLabel>
+              <Select
+                className='h-[50px] min-w-[180px]'
+                labelId='filter-sort-price'
+                id='selected-sort-price-grp'
+                value={sortPrice}
+                label='sort-price'
+                onChange={handleChangeSortPrice}
+              >
+                <MenuItem value={'asc'}>Giá tăng dần</MenuItem>
+                <MenuItem value={'desc'}>Giá giảm dần</MenuItem>
+              </Select>
+            </FormControl>
+          </Box>
+        </div>
 
-      {/* product list */}
-      <div className='product-list grid items-start grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-[20px] gap-y-[40px]'>
-        {renderProducts(products)}
-      </div>
-      {/* end product list */}
+        {/* product list */}
+        {listProduct.length > 0 ? (
+          <>
+            <div className='product-list grid items-start grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-[20px] gap-y-[40px]'>
+              {renderProducts(products)}
+            </div>
+            {/* end product list */}
 
-      {/* pagination */}
-      <Stack spacing={2} className='flex justify-center items-center my-6'>
-        <Pagination
-          count={
-            (pagination._total / pagination._limit) % 1 === 0
-              ? pagination._total / pagination._limit
-              : Math.floor(pagination._total / pagination._limit) + 1
-          }
-          page={currentPageParamURL || page}
-          onChange={handleChangePage}
-        />
-      </Stack>
-      {/* end pagination */}
-    </div>
+            {/* pagination */}
+            <Stack spacing={2} className='flex justify-center items-center my-6'>
+              <Pagination
+                count={
+                  (pagination._total / pagination._limit) % 1 === 0
+                    ? pagination._total / pagination._limit
+                    : Math.floor(pagination._total / pagination._limit) + 1
+                }
+                page={currentPageParamURL || page}
+                onChange={handleChangePage}
+              />
+            </Stack>
+          </>
+        ) : (
+          <div className='pt-24 flex items-center justify-center gap-4'>
+            <Alert severity="info">Sản phẩm bạn muốn tìm không tồn tại!</Alert>
+            <Alert severity="info"> Xóa bộ lọc để tiếp tục tìm kiếm !</Alert>
+          </div>
+        )}
+        {/* end pagination */}
+      </div>
+    </>
   );
 };
 ProductList.propTypes = {
   selectedProductFor: PropTypes.string,
   setSelectedProductFor: PropTypes.func
-}
+};
 
 export default ProductList;

@@ -20,7 +20,7 @@
       "role": "admin",
       "address": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
       "phone": "0346282603",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0fD8K3vn_KC4vBp8VBb1tWYomAQEDsF_MFw&usqp=CAU"
+      "imageUrl": "https://www.w3schools.com/w3images/avatar6.png"
     },
     {
       "fullName": "Chuyên Tâm",
@@ -40,7 +40,9 @@
       "password": "User@123",
       "role": "user",
       "imageUrl": "https://lh3.googleusercontent.com/a/ACg8ocLPnRYqLKhD87V7c5vjCHVOm7DDf9z4RMOjmHk8rozwKg=s96-c",
-      "id": 5
+      "id": 5,
+      "address": "Số 7 Nguyễn Sinh Sắc, Hà Nội",
+      "phone": "0337489251"
     }
   ],
   "blogs": [],
@@ -1076,295 +1078,33 @@
   ],
   "orders": [
     {
-      "email": "Dung1@gmail.com",
+      "email": "Dung11@gmail.com",
       "cardHolder": "Nguyễn Hữu Dũng",
       "cardNumber": "1234-1234-1234",
       "billingAddress": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
       "phone": "0346282603",
       "idUser": 1,
-      "totalBill": 1989550,
-      "createdAt": "07/11/2023 10:50:25",
+      "totalBill": 1229650,
+      "createdAt": "11/11/2023 08:18:13",
       "listProduct": [
         {
+          "id": "WznagdeKsFuSK3p978Lq7x8C3Dw8uOg8mpFqReCBHMzyg6MPky8maU8yYisAGZ",
           "idProduct": 2,
-          "color": "white",
-          "size": "l",
-          "quantity": 1,
+          "color": "blue",
+          "size": "s",
+          "img": "https://canifa.com/img/1000/1500/resize/8/t/8th23w008-sl165-xl-1-u.webp",
+          "nameProduct": "Áo sơ mi Oxford nam cotton dài tay",
+          "quantity": 2,
           "price": 499000,
           "percentSale": 0,
           "productFor": "man",
           "typeProduct": "Áo"
         },
         {
-          "idProduct": 3,
-          "color": "black",
-          "size": "m",
-          "quantity": 1,
-          "price": 549000,
-          "percentSale": 0.05,
-          "productFor": "woman",
-          "typeProduct": "Đồ bộ"
-        },
-        {
-          "idProduct": 4,
-          "color": "black",
-          "size": "m",
-          "quantity": 1,
-          "price": 949000,
-          "percentSale": 0,
-          "productFor": "woman",
-          "typeProduct": "Váy"
-        }
-      ],
-      "status": "success",
-      "id": 1
-    },
-    {
-      "email": "Dung1@gmail.com",
-      "cardHolder": "Nguyễn Hữu Dũng",
-      "cardNumber": "2345-2345-2345",
-      "billingAddress": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
-      "phone": "0346282603",
-      "idUser": 1,
-      "totalBill": 231650,
-      "createdAt": "07/11/2023 10:50:56",
-      "listProduct": [
-        {
+          "id": "nCM401PTX30lYnvSUcJRwMzMXXpMCGDabyfLzoIJRoglJFvZVL7vYd5RPjpJ4e",
           "idProduct": 7,
           "color": "grey",
-          "size": "s",
-          "quantity": 1,
-          "price": 249000,
-          "percentSale": 0.15,
-          "productFor": "childrenBoy",
-          "typeProduct": "Áo"
-        }
-      ],
-      "status": "success",
-      "id": 2
-    },
-    {
-      "email": "Dung1@gmail.com",
-      "cardHolder": "Nguyễn Hữu Dũng",
-      "cardNumber": "1234-1234-1234",
-      "billingAddress": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
-      "phone": "0346282603",
-      "idUser": 1,
-      "totalBill": 269000,
-      "createdAt": "07/11/2023 10:59:11",
-      "listProduct": [
-        {
-          "idProduct": 8,
-          "color": "purpleCharcoal",
           "size": "m",
-          "quantity": 1,
-          "price": 249000,
-          "percentSale": 0,
-          "productFor": "childrenBoy",
-          "typeProduct": "Áo"
-        }
-      ],
-      "status": "success",
-      "id": 3
-    },
-    {
-      "email": "Dung1@gmail.com",
-      "cardHolder": "Nguyễn Hữu Dũng",
-      "cardNumber": "1234-1234-1234",
-      "billingAddress": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
-      "phone": "0346282603",
-      "idUser": 1,
-      "totalBill": 673300,
-      "createdAt": "07/11/2023 11:05:43",
-      "listProduct": [
-        {
-          "idProduct": 18,
-          "color": "yellow",
-          "size": "m",
-          "quantity": 2,
-          "price": 349000,
-          "percentSale": 0.15,
-          "productFor": "childrenGirl",
-          "typeProduct": "Áo"
-        }
-      ],
-      "status": "success",
-      "id": 4
-    },
-    {
-      "email": "Dung1@gmail.com",
-      "cardHolder": "Nguyễn Hữu Dũng",
-      "cardNumber": "2222-3333-4444",
-      "billingAddress": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
-      "phone": "0346282603",
-      "idUser": 1,
-      "totalBill": 1932500,
-      "createdAt": "07/11/2023 11:12:01",
-      "listProduct": [
-        {
-          "idProduct": 10,
-          "color": "blue",
-          "size": "m",
-          "quantity": 3,
-          "price": 750000,
-          "percentSale": 0.15,
-          "productFor": "man",
-          "typeProduct": "Quần"
-        }
-      ],
-      "status": "success",
-      "id": 5
-    },
-    {
-      "email": "thien1@gmail.com",
-      "cardHolder": "Nguyễn Hữu Thiện huhu",
-      "cardNumber": "1234-5678-1234",
-      "billingAddress": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
-      "phone": "0346282603",
-      "idUser": 2,
-      "totalBill": 541550,
-      "createdAt": "07/11/2023 11:20:40",
-      "listProduct": [
-        {
-          "idProduct": 15,
-          "color": "orange",
-          "size": "s",
-          "quantity": 1,
-          "price": 549000,
-          "percentSale": 0.05,
-          "productFor": "woman",
-          "typeProduct": "Đồ bộ"
-        }
-      ],
-      "status": "success",
-      "id": 6
-    },
-    {
-      "email": "thien1@gmail.com",
-      "cardHolder": "Nguyễn Hữu Thiện huhu",
-      "cardNumber": "1234-1234-4567",
-      "billingAddress": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
-      "phone": "0346282603",
-      "idUser": 2,
-      "totalBill": 316650,
-      "createdAt": "07/11/2023 11:22:27",
-      "listProduct": [
-        {
-          "idProduct": 6,
-          "color": "yellow",
-          "size": "s",
-          "quantity": 1,
-          "price": 349000,
-          "percentSale": 0.15,
-          "productFor": "childrenGirl",
-          "typeProduct": "Áo"
-        }
-      ],
-      "status": "success",
-      "id": 7
-    },
-    {
-      "email": "thien1@gmail.com",
-      "cardHolder": "Nguyễn Hữu Thiện",
-      "cardNumber": "1234-1234-5678",
-      "billingAddress": "12 Ly Thuong Kiet",
-      "phone": "0337489251",
-      "idUser": 2,
-      "totalBill": 673300,
-      "createdAt": "07/11/2023 14:36:19",
-      "listProduct": [
-        {
-          "idProduct": 6,
-          "color": "yellow",
-          "size": "m",
-          "quantity": 1,
-          "price": 349000,
-          "percentSale": 0.15,
-          "productFor": "childrenGirl",
-          "typeProduct": "Áo"
-        },
-        {
-          "idProduct": 6,
-          "color": "yellow",
-          "size": "l",
-          "quantity": 1,
-          "price": 349000,
-          "percentSale": 0.15,
-          "productFor": "childrenGirl",
-          "typeProduct": "Áo"
-        }
-      ],
-      "status": "success",
-      "id": 8
-    },
-    {
-      "email": "Dung11@gmail.com",
-      "cardHolder": "Nguyễn Hữu Dũng",
-      "cardNumber": "5555-8888-9999",
-      "billingAddress": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
-      "phone": "0346282603",
-      "idUser": 1,
-      "totalBill": 637500,
-      "createdAt": "10/11/2023 09:46:33",
-      "listProduct": [
-        {
-          "id": "ZeWPdwoScT04heGRDgHHH0SVTynS00uNDXdD6tqNzqDm7vMDo9FmF1v0DM3owR",
-          "idProduct": 31,
-          "color": "brown",
-          "size": "xxl",
-          "img": "https://sites.create-cdn.net/siteimages/28/4/9/284928/15/7/9/15798435/761x1000.jpg?1505296014",
-          "nameProduct": "Vay dep 123",
-          "quantity": 1,
-          "price": 950000,
-          "percentSale": 0.35,
-          "productFor": "woman",
-          "typeProduct": "Váy"
-        }
-      ],
-      "status": "success",
-      "id": 9
-    },
-    {
-      "email": "thiencute180402@gmail.com",
-      "cardHolder": "Hữu Thiện Nguyễn",
-      "cardNumber": "1234-5432-5543",
-      "billingAddress": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
-      "phone": "0346282603",
-      "totalBill": 429000,
-      "createdAt": "10/11/2023 10:37:51",
-      "listProduct": [
-        {
-          "id": "BP22MnGz3n7zt7zX96WI46lFIpgh9sNXytc2EmMt3A7P1xc93zeKFzEIDamzee",
-          "idProduct": 5,
-          "color": "lightBlue",
-          "size": "m",
-          "img": "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fb488-130-1-u.webp",
-          "nameProduct": "Áo gilet len bé gái cổ tim",
-          "quantity": 1,
-          "price": 349000,
-          "percentSale": 0,
-          "productFor": "childrenGirl",
-          "typeProduct": "Áo"
-        }
-      ],
-      "status": "success",
-      "id": 10
-    },
-    {
-      "email": "nhthien.dut@gmail.com",
-      "cardHolder": "Thiện Nguyễn Hữu",
-      "cardNumber": "2222-4444-5555",
-      "billingAddress": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
-      "phone": "0346282603",
-      "idUser": 5,
-      "totalBill": 231650,
-      "createdAt": "10/11/2023 10:42:34",
-      "listProduct": [
-        {
-          "id": "vXjiJYxRyGY0FJtjB7b2PT6XSazHbBEfE21aAVzvPg7q54aCk0ov3neN9glUoL",
-          "idProduct": 7,
-          "color": "white",
-          "size": "s",
           "img": "https://canifa.com/img/1000/1500/resize/2/t/2tp23w007-sw001-1.webp",
           "nameProduct": "Áo polo dài tay bé trai cotton USA có hình in",
           "quantity": 1,
@@ -1375,26 +1115,93 @@
         }
       ],
       "status": "success",
-      "id": 11
+      "id": 1
     },
     {
-      "email": "nhthien.dut@gmail.com",
-      "cardHolder": "Thiện Nguyễn Hữu",
-      "cardNumber": "1234-6666-7777",
-      "billingAddress": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
-      "phone": "0346282603",
-      "idUser": 5,
-      "totalBill": 579000,
-      "createdAt": "10/11/2023 10:54:13",
+      "email": "vanA@gmail.com",
+      "cardHolder": "Nguyen Van B",
+      "cardNumber": "1234-1234-1234",
+      "billingAddress": "16 Ly Thuong Kiet",
+      "phone": "0337489251",
+      "idUser": 6,
+      "totalBill": 1401100,
+      "createdAt": "13/11/2023 01:03:14",
       "listProduct": [
         {
-          "id": "Ze8B8QKZMMnPC0WSRLskO4dlc9BE25xGrDgGcuOj1FgldRU2PqpQn8F0b4v7c2",
-          "idProduct": 2,
+          "id": "1MKVkfJCXmisemSpmXHkU1Z01p9q47QZ7hm8prnFUuNoMC2l6b0BcN3L0USLW4",
+          "idProduct": 3,
+          "color": "orange",
+          "size": "m",
+          "img": "https://canifa.com/img/1000/1500/resize/6/s/6st23w002-se239-m-1-ghep-u.webp",
+          "nameProduct": "Bộ quần áo nữ có hình in",
+          "quantity": 2,
+          "price": 549000,
+          "percentSale": 0.05,
+          "productFor": "woman",
+          "typeProduct": "Đồ bộ"
+        },
+        {
+          "id": "j0lviTKTzUsCl34jnBeNtgbrRzwkZEIQMtyIRoD0dZQX5hTjbOjIhMrm5r1fhw",
+          "idProduct": 12,
           "color": "white",
           "size": "m",
+          "img": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-1-thumb.webp",
+          "nameProduct": "Áo phông nam cổ tròn dáng suông",
+          "quantity": 2,
+          "price": 169000,
+          "percentSale": 0,
+          "productFor": "man",
+          "typeProduct": "Áo"
+        }
+      ],
+      "status": "success",
+      "id": 2
+    },
+    {
+      "email": "thiencute180402@gmail.com",
+      "cardHolder": "Hữu Thiện Nguyễn",
+      "cardNumber": "2222-3333-4444",
+      "billingAddress": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
+      "phone": "0346282603",
+      "idUser": 7,
+      "totalBill": 429000,
+      "createdAt": "13/11/2023 01:06:06",
+      "listProduct": [
+        {
+          "id": "HRscNwguPpWAj0sdkmS1zm81jsQv9TgUeYUFoOJeqmSR0c2lCjyOrnNo7qlsgk",
+          "idProduct": 5,
+          "color": "lightBlue",
+          "size": "s",
+          "img": "https://canifa.com/img/1000/1500/resize/1/t/1te23w005-fb488-130-1-u.webp",
+          "nameProduct": "Áo gilet len bé gái cổ tim",
+          "quantity": 1,
+          "price": 349000,
+          "percentSale": 0,
+          "productFor": "childrenGirl",
+          "typeProduct": "Áo"
+        }
+      ],
+      "status": "success",
+      "id": 3
+    },
+    {
+      "email": "thiencute180402@gmail.com",
+      "cardHolder": "Hữu Thiện Nguyễn",
+      "cardNumber": "3456-3456-3456",
+      "billingAddress": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
+      "phone": "0346282603",
+      "idUser": 7,
+      "totalBill": 1018000,
+      "createdAt": "13/11/2023 01:10:36",
+      "listProduct": [
+        {
+          "id": "nk4U8KmGwR60qKwADiRBNijd5E8iP1uveg0qlta9sYqWbyvmFstA3B1RueiG6q",
+          "idProduct": 2,
+          "color": "blue",
+          "size": "s",
           "img": "https://canifa.com/img/1000/1500/resize/8/t/8th23w008-sl165-xl-1-u.webp",
           "nameProduct": "Áo sơ mi Oxford nam cotton dài tay",
-          "quantity": 1,
+          "quantity": 2,
           "price": 499000,
           "percentSale": 0,
           "productFor": "man",
@@ -1402,7 +1209,34 @@
         }
       ],
       "status": "success",
-      "id": 12
+      "id": 4
+    },
+    {
+      "email": "thiencute180402@gmail.com",
+      "cardHolder": "Hữu Thiện Nguyễn",
+      "cardNumber": "5678-5678-5678",
+      "billingAddress": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
+      "phone": "0346282603",
+      "idUser": 7,
+      "totalBill": 598000,
+      "createdAt": "13/11/2023 01:11:15",
+      "listProduct": [
+        {
+          "id": "M372p5ZZA4UC5NFFygsdUcVheGTOug7kfwtNRVo5um3YRRupEdRPb7ZDFfhVMr",
+          "idProduct": 9,
+          "color": "grey",
+          "size": "m",
+          "img": "https://canifa.com/img/1000/1500/resize/8/b/8bp23w006-sb422-xl-1-u.webp",
+          "nameProduct": "Quần nỉ nam dáng jogger bo gấu",
+          "quantity": 2,
+          "price": 289000,
+          "percentSale": 0,
+          "productFor": "man",
+          "typeProduct": "Quần"
+        }
+      ],
+      "status": "success",
+      "id": 5
     }
   ]
 }
