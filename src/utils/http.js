@@ -1,8 +1,9 @@
 import axios from 'axios';
-// import 'dotenv/config' 
+// import 'dotenv/config'
 
 const http = axios.create({
-  baseURL: import.meta.env.VITE_REACT_APP_BE_URL
+  // baseURL: import.meta.env.VITE_REACT_APP_BE_URL
+  baseURL: 'https://json-server-canifa.vercel.app/'
 });
 // Add a response interceptor
 http.interceptors.request.use(
