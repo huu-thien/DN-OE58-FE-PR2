@@ -1126,46 +1126,7 @@
       "status": "success",
       "id": 1
     },
-    {
-      "email": "vanA@gmail.com",
-      "cardHolder": "Nguyen Van B",
-      "cardNumber": "1234-1234-1234",
-      "billingAddress": "16 Ly Thuong Kiet",
-      "phone": "0337489251",
-      "idUser": 7,
-      "totalBill": 1401100,
-      "createdAt": "13/11/2023 01:03:14",
-      "listProduct": [
-        {
-          "id": "1MKVkfJCXmisemSpmXHkU1Z01p9q47QZ7hm8prnFUuNoMC2l6b0BcN3L0USLW4",
-          "idProduct": 3,
-          "color": "orange",
-          "size": "m",
-          "img": "https://canifa.com/img/1000/1500/resize/6/s/6st23w002-se239-m-1-ghep-u.webp",
-          "nameProduct": "Bộ quần áo nữ có hình in",
-          "quantity": 2,
-          "price": 549000,
-          "percentSale": 0.05,
-          "productFor": "woman",
-          "typeProduct": "Đồ bộ"
-        },
-        {
-          "id": "j0lviTKTzUsCl34jnBeNtgbrRzwkZEIQMtyIRoD0dZQX5hTjbOjIhMrm5r1fhw",
-          "idProduct": 12,
-          "color": "white",
-          "size": "m",
-          "img": "https://canifa.com/img/1000/1500/resize/8/t/8ts23a004-so221-1-thumb.webp",
-          "nameProduct": "Áo phông nam cổ tròn dáng suông",
-          "quantity": 2,
-          "price": 169000,
-          "percentSale": 0,
-          "productFor": "man",
-          "typeProduct": "Áo"
-        }
-      ],
-      "status": "success",
-      "id": 2
-    },
+    
     {
       "email": "thiencute180402@gmail.com",
       "cardHolder": "Hữu Thiện Nguyễn",
@@ -1193,60 +1154,8 @@
       "status": "success",
       "id": 3
     },
-    {
-      "email": "thiencute180402@gmail.com",
-      "cardHolder": "Hữu Thiện Nguyễn",
-      "cardNumber": "3456-3456-3456",
-      "billingAddress": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
-      "phone": "0346282603",
-      "idUser": 7,
-      "totalBill": 1018000,
-      "createdAt": "13/11/2023 01:10:36",
-      "listProduct": [
-        {
-          "id": "nk4U8KmGwR60qKwADiRBNijd5E8iP1uveg0qlta9sYqWbyvmFstA3B1RueiG6q",
-          "idProduct": 2,
-          "color": "blue",
-          "size": "s",
-          "img": "https://canifa.com/img/1000/1500/resize/8/t/8th23w008-sl165-xl-1-u.webp",
-          "nameProduct": "Áo sơ mi Oxford nam cotton dài tay",
-          "quantity": 2,
-          "price": 499000,
-          "percentSale": 0,
-          "productFor": "man",
-          "typeProduct": "Áo"
-        }
-      ],
-      "status": "success",
-      "id": 4
-    },
-    {
-      "email": "thiencute180402@gmail.com",
-      "cardHolder": "Hữu Thiện Nguyễn",
-      "cardNumber": "5678-5678-5678",
-      "billingAddress": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
-      "phone": "0346282603",
-      "idUser": 7,
-      "totalBill": 598000,
-      "createdAt": "13/11/2023 01:11:15",
-      "listProduct": [
-        {
-          "id": "M372p5ZZA4UC5NFFygsdUcVheGTOug7kfwtNRVo5um3YRRupEdRPb7ZDFfhVMr",
-          "idProduct": 9,
-          "color": "grey",
-          "size": "m",
-          "img": "https://canifa.com/img/1000/1500/resize/8/b/8bp23w006-sb422-xl-1-u.webp",
-          "nameProduct": "Quần nỉ nam dáng jogger bo gấu",
-          "quantity": 2,
-          "price": 289000,
-          "percentSale": 0,
-          "productFor": "man",
-          "typeProduct": "Quần"
-        }
-      ],
-      "status": "success",
-      "id": 5
-    },
+    
+    
     {
       "email": "chuyentamgvn123@gmail.com",
       "cardHolder": "Chuyên Tâm",
