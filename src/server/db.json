@@ -43,6 +43,15 @@
       "id": 5,
       "address": "Số 7 Nguyễn Sinh Sắc, Hà Nội",
       "phone": "0337489251"
+    },
+    {
+      "fullName": "Hữu Thiện Nguyễn",
+      "username": "thiencute180402@gmail.com",
+      "email": "thiencute180402@gmail.com",
+      "password": "User@123",
+      "role": "user",
+      "imageUrl": "https://lh3.googleusercontent.com/a/ACg8ocKC1g0K_MhWWKcDOlKtDtTY0GHbMKfi-THCDJRdOOl52A=s96-c",
+      "id": 6
     }
   ],
   "blogs": [],
@@ -1123,7 +1132,7 @@
       "cardNumber": "1234-1234-1234",
       "billingAddress": "16 Ly Thuong Kiet",
       "phone": "0337489251",
-      "idUser": 6,
+      "idUser": 7,
       "totalBill": 1401100,
       "createdAt": "13/11/2023 01:03:14",
       "listProduct": [
@@ -1237,6 +1246,73 @@
       ],
       "status": "success",
       "id": 5
+    },
+    {
+      "email": "chuyentamgvn123@gmail.com",
+      "cardHolder": "Chuyên Tâm",
+      "cardNumber": "1234-1234-1234",
+      "billingAddress": "16 Ly Thuong Kiet",
+      "phone": "0337489251",
+      "idUser": 6,
+      "totalBill": 790650,
+      "createdAt": "13/11/2023 10:43:29",
+      "listProduct": [
+        {
+          "id": "dz0KOZJmh6BrYdct7cgKQRsytZi4KkO2EgWWyhibP4XioINjv2CkBj819lwsrb",
+          "idProduct": 2,
+          "color": "blue",
+          "size": "s",
+          "img": "https://canifa.com/img/1000/1500/resize/8/t/8th23w008-sl165-xl-1-u.webp",
+          "nameProduct": "Áo sơ mi Oxford nam cotton dài tay",
+          "quantity": 1,
+          "price": 499000,
+          "percentSale": 0,
+          "productFor": "man",
+          "typeProduct": "Áo"
+        },
+        {
+          "id": "c9PCTiYMbNFJtb3bMnD8DY24GyBAc44OynT2S2XCbmEYY61OS6dlRci1pMO1vh",
+          "idProduct": 7,
+          "color": "grey",
+          "size": "s",
+          "img": "https://canifa.com/img/1000/1500/resize/2/t/2tp23w007-sw001-1.webp",
+          "nameProduct": "Áo polo dài tay bé trai cotton USA có hình in",
+          "quantity": 1,
+          "price": 249000,
+          "percentSale": 0.15,
+          "productFor": "childrenBoy",
+          "typeProduct": "Áo"
+        }
+      ],
+      "status": "success",
+      "id": 6
+    },
+    {
+      "email": "thien1@gmail.com",
+      "cardHolder": "Nguyễn Hữu Thiện",
+      "cardNumber": "3333-3333-3333",
+      "billingAddress": "Số 7 Nguyễn Thị Minh Khai, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh",
+      "phone": "0346282603",
+      "idUser": 2,
+      "totalBill": 1918000,
+      "createdAt": "13/11/2023 10:53:35",
+      "listProduct": [
+        {
+          "id": "Hv7SN639tSoQZWivy7cqg7LyQlycjHi9JqtcasJS2e91fZIE0LVFtK51yAnYje",
+          "idProduct": 16,
+          "color": "black",
+          "size": "m",
+          "img": "https://canifa.com/img/1000/1500/resize/6/d/6ds23w006-sk010-m-1-u.webp",
+          "nameProduct": "Váy liền nữ ngắn tay dáng A dài",
+          "quantity": 2,
+          "price": 949000,
+          "percentSale": 0,
+          "productFor": "woman",
+          "typeProduct": "Váy"
+        }
+      ],
+      "status": "success",
+      "id": 7
     }
   ]
 }
